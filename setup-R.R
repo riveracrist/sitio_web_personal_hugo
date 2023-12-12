@@ -1,6 +1,6 @@
-#blogdown::new_site(theme = "zjedi/hugo-scroll")
+#blogdown::new_site(theme = "gurusabarish/hugo-profile")
 blogdown::build_site() # para cambios grandes
-blogdown::serve_site()
+blogdown::serve_site() 
 blogdown::stop_server()
 
 
