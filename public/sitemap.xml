@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://hugo-profile.netlify.app/blogs/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+    <loc>https://hugo-profile.netlify.app/tags/astrof%C3%ADsica/</loc>
+    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>https://hugo-profile.netlify.app/tags/example/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+    <loc>https://hugo-profile.netlify.app/blogs/</loc>
+    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://hugo-profile.netlify.app/tags/cosmos/</loc>
+    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
   </url><url>
     <loc>https://hugo-profile.netlify.app/</loc>
+    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://hugo-profile.netlify.app/tags/f%C3%ADsica/</loc>
+    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://hugo-profile.netlify.app/blogs/mipost/</loc>
+    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://hugo-profile.netlify.app/tags/</loc>
+    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://hugo-profile.netlify.app/tags/example/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
     <loc>https://hugo-profile.netlify.app/tags/markdown-syntax/</loc>
@@ -18,9 +33,6 @@
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
     <loc>https://hugo-profile.netlify.app/blogs/math/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>https://hugo-profile.netlify.app/tags/</loc>
     <lastmod>2022-12-09T19:53:33+05:30</lastmod>
   </url><url>
     <loc>https://hugo-profile.netlify.app/gallery/</loc>

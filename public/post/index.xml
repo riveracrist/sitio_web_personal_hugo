@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Hugo Profile</title>
+    <title>Posts on Cristian Rivera G.</title>
     <link>https://hugo-profile.netlify.app/post/</link>
-    <description>Recent content in Posts on Hugo Profile</description>
+    <description>Recent content in Posts on Cristian Rivera G.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Dec 2020 21:13:14 -0500</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />

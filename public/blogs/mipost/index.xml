@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mi Post de Prueba on Cristian Rivera G.</title>
+    <link>https://hugo-profile.netlify.app/blogs/mipost/</link>
+    <description>Recent content in Mi Post de Prueba on Cristian Rivera G.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Dec 2023 23:29:21 +0530</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/blogs/mipost/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

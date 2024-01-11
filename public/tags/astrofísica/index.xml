@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Astrofísica on Cristian Rivera G.</title>
+    <link>https://hugo-profile.netlify.app/tags/astrof%C3%ADsica/</link>
+    <description>Recent content in Astrofísica on Cristian Rivera G.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Dec 2023 23:29:21 +0530</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/tags/astrof%C3%ADsica/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mi Post de Prueba</title>
+      <link>https://hugo-profile.netlify.app/blogs/mipost/</link>
+      <pubDate>Thu, 14 Dec 2023 23:29:21 +0530</pubDate>
+      
+      <guid>https://hugo-profile.netlify.app/blogs/mipost/</guid>
+      <description>Definición Esto es un párrafo para probas cómo se ve en la publicación y dentro de el blog.
+Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+Blockquotes The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element, and optionally with in-line changes such as annotations and abbreviations.</description>
+    </item>
+    
+  </channel>
+</rss>
