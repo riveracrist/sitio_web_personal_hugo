@@ -363,10 +363,10 @@ params:
 
       - title: Tablero de Datos con Arduino
         content: Tablero de datos que visualiza los datos capturados con sensores programados con Arduino.
-        image: /images/projects/tablero_arduino.png
+        image: /images/projects/tableroarduino.png
         featured:
           name: Link
-          link: https://rpubs.com/Semilla_389/782326
+          link: https://rpubs.com/Semilla_389/1138902
         badges:
           - "Arduino"
           - "Flexdashboard"
