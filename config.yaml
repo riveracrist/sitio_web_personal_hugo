@@ -35,22 +35,22 @@ Menus:
     #   url: /gallery
     #   weight: 2
     #Dropdown menu
-    - identifier: dropdown
-      title: Example dropdown menu
-      name: Dropdown
-      weight: 3
-    - identifier: dropdown1
-      title: example dropdown 1
-      name: example 1
-      url: /#
-      parent: dropdown
-      weight: 1
-    - identifier: dropdown2
-      title: example dropdown 2
-      name: example 2
-      url: /#
-      parent: dropdown
-      weight: 2
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
 
 params:
   title: "Cristian R."
@@ -86,12 +86,12 @@ params:
 
   # color preference
   # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
+  #   textColor: "#070707"
+  #   secondaryTextColor: "#757575"
+  #   backgroundColor: "#B2B5E0"
+  #   secondaryBackgroundColor: "#FFD43A"
+  #   primaryColor: "#F1E0AC"
+  #   secondaryColor: "#96C2DB"
 
   #   darkmode:
   #     textColor:
@@ -105,13 +105,13 @@ params:
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Cristian Rivera González" # Brand name for the brand | default is the title variable
+    showBrandLogo: true # Show brand logo in nav bar | default is true
+    brandName: "Cristian Rivera" # Brand name for the brand | default is the title variable
     disableSearch: false
-    searchPlaceholder: "Buscar"
+    searchPlaceholder: "Buscar en blog"
     stickyNavBar:
       enable : true
-      showOnScrollUp : true
+      showOnScrollUp : false
     menus:
       disableAbout: false
       disableExperience: false
@@ -126,16 +126,16 @@ params:
     intro: ""
     title: "¡Bienvenid@!"
     subtitle: "Gracias por visitar mi página"
-    content: "Este es un espacio dedicado a explorar algunos contenidos sobre lenguajes de programación, ciencia de datos, y herramientas de uso libre que favorecen el trabajo colaborativo y el intercambio de conocimientos."
+    content: "Este es un espacio donde comparto mis proyectos, habilidades y experiencias en programación, análisis de datos y desarrollo de software. Aquí encontrarás detalles sobre mi formación y mis intereses en tecnología."
     image: /images/Captura.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "Blog"
-      url: "#"
-      download: true
+      name: "Proyectos"
+      url: "#projects"
+      download: false
       newPage: false
     socialLinks:
       fontAwesomeIcons:
@@ -145,9 +145,9 @@ params:
           url: https://example.com
         - icon: fab fa-facebook
           url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
 
   # About
   about:
@@ -155,92 +155,107 @@ params:
     title: "Conóceme"
     image: "/images/microchip.png"
     content: |-
-      Soy un entusiasta y aprendiz del mundo de las tecnologías de la información y las comunicaciones (TIC) con una pasión por la ciencia de datos y el desarrollo de software. 
-
-      La curiosidad por comprender cómo las diferentes tecnologías dan forma a nuestro mundo digital, me ha llevado a dedicar tiempo y esfuerzo en el aprendizaje de algunos lenguajes de programación y áreas de la matemática.
+      Como estudiante de Ingeniería de Telecomunicaciones y aprendiz de Análisis y Desarrollo de Software, tengo un fuerte interés en la ciencia de datos y las tecnologías de la información y las comunicaciones (TIC), mi deseo es entender cómo estas herramientas dan forma a nuestro entorno digital. Esto me ha motivado a aprender algunos lenguajes de programación, fundamentos de electrónica, y conceptos matemáticos aplicados.
       
-      La elegancia y potencia del lenguaje [R](https://www.r-project.org/) me atraen por su aplicación en el análisis estadístico y la visualización de datos, de igual forma, me he sumergido en los múltiples usos de [Python](https://www.python.org/), aprovechando su versatilidad para interactuar con plataformas como [Arduino](https://www.arduino.cc/) y [Raspberry Pi](https://www.raspberrypi.com/) a través del desarrollo de prototipos (IoT) y sistemas automatizados con sensores de bajo costo, permitiéndome comprender los fundamentos de la electrónica, la programación y la integración entre el hardware y el software.
+      Me he enfocado en [R](https://www.r-project.org/) y [Python](https://www.python.org/) para el análisis y la visualización de datos, considerándolos herramientas muy eficaces y versátiles. Además, he desarrollado prototipos personales de IoT y sistemas automatizados usando [Arduino](https://www.arduino.cc/) y [Raspberry Pi](https://www.raspberrypi.com/), lo que me ha permitido comprender la interconexión entre hardware y software.
       
-      Además, he profundizado mis conocimientos en [SQL](https://es.wikipedia.org/wiki/SQL) para gestionar bases de datos de manera efectiva y en [C++](https://isocpp.org/) para entender la lógica y la construcción de los algoritmos.
+      Algunos intereses adicionales incluyen la creación y gestión de bases de datos con SQL, el desarrollo web con HTML, CSS y JavaScript, y la programación orientada a objetos con C++.
     skills:
       enable: true
-      title: "Algunos de mis Intereses:"
+      title: "Otros Intereses:"
       items:
-        - "[Arduino](https://www.arduino.cc/)"
-        - "Automatización"
-        - "[C++](https://isocpp.org/)"
-        - "Circuitos Eléctricos"
+        - "Astronomía"
+        - "Cloud Computing"
         - "Estadística"
-        - "HTML"
-        - "[Python](https://www.python.org/)"
-        - "[R](https://www.r-project.org/)"
-        - "[Raspberry Pi](https://www.raspberrypi.com/)"
-        - "[SQL](https://es.wikipedia.org/wiki/SQL)"
-
+        - "Historia"
+        - "Inteligencia Artificial"
+        - "Mascotas"
+        - "Música"
+        - "Video Juegos"
+        
   # Experience
-  # experience:
-  #   enable: true
-  #   # title: "Custom Name"
-  #   items:
-  #     - job: "Senior Software Developer"
-  #       company: "Facebook"
-  #       companyUrl: "https://example.com"
-  #       date: "Jan 2022 - present"
-  #       featuredLink:
-  #         enable: true
-  #         name: "View the project"
-  #         url: "https://example.com"
-  #       content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-  # 
-  #     - job: "Software Developer"
-  #       company: "Amazon"
-  #       companyUrl: "https://example.com"
-  #       date: "Sep 2020 - Dec 2021"
-  #       featuredLink:
-  #         enable: true
-  #         url: "https://example.com"
-  #       info:
-  #         enable: true
-  #         content: I worked as a software developer for more than one year in Amazon.
-  #       content: |
-  #         I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-  # 
-  #         - Lead backend developer for a product.
-  #         - Created a frontend design for a product.
-  # 
-  #     - job: "Junior Software Developer"
-  #       company: "Apple"
-  #       companyUrl: "https://example.com"
-  #       date: "Jan 2020 - Aug 2020"
-  #       info:
-  #         enable: false
-  #       featuredLink:
-  #         enable: true
-  #         url: "https://example.com"
-  #       content: |
-  #         I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-  # 
-  #         - Lead backend developer for a product.
-  #         - Created a frontend design for a product.
-  # 
-  #     - job: "UI/UX Designer"
-  #       company: "Netflix"
-  #       companyUrl: "https://example.com"
-  #       date: "June 2017 - Nov 2019"
-  #       featuredLink:
-  #         enable: true
-  #         url: "https://example.com"
-  #       content: |
-  #         I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-  # 
-  #         - Lead backend developer for a product.
-  #         - Created a frontend design for a product.
-  # 
-  #     - job: "Product Designer"
-  #       company: "Google"
-  #       companyUrl: "https://example.com"
-  #       date: "Feb 2016 - Mar 2017"
-  #       content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+  experience:
+    enable: true
+    title: "Cursos Complementarios"
+    items:
+      - job: "Bases de Datos"
+        company: "Oracle Academy"
+        companyUrl: "https://www.netacad.com/"
+        #date: "Ago 2024"
+        featuredLink:
+          enable: false
+          name: "Contenido"
+          url: "https://academy.oracle.com/pages/coursedescription/Oracle%20Academy%20Database%20Design%20Course%20Description.pdf"
+        info:
+          enable: false
+        content: |
+        
+          - [**Database Design**](https://academy.oracle.com/pages/coursedescription/Oracle%20Academy%20Database%20Design%20Course%20Description.pdf).
+          
+          <img src="/images/oracle.png" alt="drawing" style="width:130px;"/>
+
+      - job: "Python"
+        company: "Cisco Networking Academy"
+        companyUrl: "https://www.netacad.com/"
+        #date: "Dic 2024"
+        # featuredLink:
+        #   enable: true
+        #   url: "https://example.com"
+        info:
+          enable: false
+          content: I worked as a software developer for more than one year in Amazon.
+        content: |
+          
+          - [**Python Essentials 1**](https://www.netacad.com/courses/python-essentials-1?courseLang=en-US).
+          
+          
+          - [**Python Essentials 2**](https://www.netacad.com/courses/python-essentials-2?courseLang=en-US).
+          
+          <img src="/images/python-essentials-1.png" alt="drawing" style="width:130px;"/>
+          <img src="/images/python-essentials-2.png" alt="drawing" style="width:130px;"/>
+
+      - job: "Google Cloud"
+        company: "Coursera - Google"
+        companyUrl: "https://www.coursera.org/"
+        #date: "Jan 2020 - Aug 2020"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          
+          - [**Google Cloud Fundamentals Core Infrastructure**](https://www.coursera.org/account/accomplishments/verify/K34OW9CJ58MP).
+          
+          
+          - [**Architecting with Google Kubernets Engine**](https://www.coursera.org/account/accomplishments/verify/6X8ZTZISL4HQ).
+          
+          <img src="/images/coursera.png" alt="drawing" style="width:130px;"/>
+          <img src="/images/kubernetsMinTIC.png" alt="drawing" style="width:130px;"/>
+          
+
+      - job: "Desarrollo de Software"
+        company: "SENA"
+        companyUrl: "https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion202&buscador_texto=&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1"
+        #date: "June 2017 - Nov 2019"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+        content: |
+          
+          - Bases de Datos: generalidades y sistemas de gestión.
+          - Construcción Bases de Datos con MySQL.
+          - Variables y Estructuras de Control en Python.
+          - Análisis Exploratorio de Datos con Python.
+          - Estructura del Lenguaje de Programación C++ (Nivel I).
+      # 
+      # - job: "Product Designer"
+      #   company: "Google"
+      #   companyUrl: "https://example.com"
+      #   date: "Feb 2016 - Mar 2017"
+      #   content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
 
   # Education
   education:
@@ -248,14 +263,42 @@ params:
     title: "Educación"
     index: false
     items:
+      - title: "Ingeniería de Telecomunicaciones"
+        school:
+          name: "Universidad de Antioquia, Medellín"
+          url: "https://www.udea.edu.co/"
+        date: "2024 - En curso"
+        #GPA: "3.8 out of 5.0"
+        content: |-
+          
+          Actividades Extracurriculares:
+            - Master Power BI Microsoft - Intelligent Training.
+            - Master class Tu Carrera en la Nube - MinTIC, Google.
+            - Taller Aulas de Inovación - Facultad de Ingeniería, Comisión de Regulación de Comunicaciones.
+      - title: "Tecnología en Análisis y Desarrollo de Software (ADSO)"
+        school: 
+          name: "Centro Agroempresarial y Minero - SENA, Regional Bolívar"
+          url: "https://www.sena.edu.co/es-co/Paginas/default.aspx"
+        date: "2023 - En curso"
+        #GPA: "3.9 out of 5.0"
+        content: |-
+          
+          Actividades Extracurriculares:
+            - Vocero de la ficha de ADSO
+            - Representante de estudiantes modalidad virtual.
+            - Encuentro Zonal de liderazgo 2024 Neiva, Huila.
+        featuredLink:
+          enable: true
+          name: "Proyecto Página Web ADSO"
+          url: "https://example.com"
       - title: "Ingeniería de Control"
         school:
           name: "Universidad Nacional de Colombia, Medellín"
           url: "https://unal.edu.co/"
-        #date: "2013 - 2015"
+        date: "2015 - No completado"
         #GPA: "3.8 out of 5.0"
         content: |-
-          Cursos:
+          Cursos Aprobados:
             - Geometría Vectorial y Analítica. 
             - Álgebra Lineal.
             - Cálculo Diferencial.
@@ -270,30 +313,7 @@ params:
             - Auxiliar de Docencia Laboratorio de Geotecnia y Pavimentos.
             - Auxiliar Administrativo.
             - [Semillero en Ciencia de Datos R y Python](https://semillerorpy.netlify.app/).
-      - title: "Tecnología en Análisis y Desarrollo de Software (ADSO)"
-        school:
-          name: "Servicio Nacional de Aprendizaje - SENA"
-          url: "https://www.sena.edu.co/es-co/Paginas/default.aspx"
-        date: "2023 - 2025"
-        #GPA: "3.9 out of 5.0"
-        content: |-
-          Competencias:
-          - Herramientas TIC.
-          - Instrumentos de Recolección de Información.
-          - Especificación Requerimientos Funcionales y no Funcionales.
-          - Evaluación de Requerimientos.
-          - Metodologías de Desarrollo de Software.
-
-          Cursos Complementarios:
-            - Bases de Datos: generalidades y sistemas de gestión.
-            - Construcción Bases de Datos con MySQL.
-            - Variables y Estructuras de Control en Python.
-            - Análisis Exploratorio de Datos con Python.
-            - Estructura del Lenguaje de Programación C++ (Nivel I).
-        featuredLink:
-          enable: true
-          name: "Proyecto Página Web ADSO"
-          url: "https://example.com"
+      
       # - title: "High School"
       #   school:
       #     name: "Thomas Jefferson High School for Science and Technology."
@@ -306,29 +326,33 @@ params:
   # Achievements
   # achievements:
   #   enable: true
-  #   # title: "Custom Name"
+  #   title: "Cursos Complementarios"
   #   items:
-  #     - title: Google kickstart runner
-  #       content: I solved all problems with optimal solution.
-  #       url: https://example.com
-  #       image: /images/achievment.jpg
-  #     - title: Facebook Hackathon Winner
-  #       content: Developed a product using Artificial Intelligence.
-  #       image: /images/achievment.jpg
-  #     - title: Hugo Profile
-  #       content: Developed a theme and getting 1K+ downloads per month.
-  #       url: "https://github.com/gurusabarish/hugo-profile"
-  #       image: /images/achievment.jpg
-  #     - title: Microsoft Imagine Runner
-  #       content: We are developed a product which can help others.
-  #     - title: Google Summer of Code
-  #       content: Contributed to a open source project.
-  #       url: https://example.com
+  #     - title: Python Essentials 1
+  #       #content: Variables, operadores aritméticos, tipos de datos, operadores lógicos, condicionales (if, elif, else), strings, bucles (for, while), tuplas, listas, diccionarios, conjuntos, manejo de excepciones.
+  #       url: https://www.netacad.com/courses/python-essentials-1?courseLang=en-US
+  #       image: /images/python-essentials-1.png
+  #     - title: Python Essentials 2
+  #       url: https://www.netacad.com/courses/python-essentials-2?courseLang=en-US
+  #       #content: Módulos, paquetes, instalar paquetes, fundamentos POO (propiedades, métodos, herencia), excepciones, manejo de archivos, módulo os, módulo datetime, modulo calendar. 
+  #       image: /images/python-essentials-2.png
+  #     - title: Database Design
+  #       #content: Modelos conceptuales y físicos, entidades, instancias, atributos, identificadores, modelado de relación de entidades, ERD, diagamas de matriz, super tipos, subtipos, documentación reglas de negocio, relaciones transferibles, UID (artificlaes, compuestos, secundarios), arcos, jerarquías, modelado recursivo, modelado de datos históricos.
+  #       url: https://academy.oracle.com/pages/coursedescription/Oracle%20Academy%20Database%20Design%20Course%20Description.pdf
+  #       image: /images/oracle.png
+  #     - title: Google Cloud Fundamentals Core Infrastructure en Español
+  #       url: https://www.coursera.org/account/accomplishments/verify/K34OW9CJ58MP
+  #       image: /images/coursera.png
+  #       #content: We are developed a product which can help others.
+  #     - title: Architecting with Google Kubernetes Engine, Foundations en Español
+  #       #content: Contributed to a open source project.
+  #       url: https://www.coursera.org/account/accomplishments/verify/6X8ZTZISL4HQ
+  #       image: /images/kubernetsMinTIC.png
 
-  # projects
+  # Projects
   projects:
     enable: true
-    title: "Proyectos"
+    title: "Proyectos Personales"
     items:
       - title: Sitio Web ADSO 
         content: Página Web creada con Quarto para la tecnología de Análisis y Desarrollo de Software del SENA.
@@ -425,9 +449,9 @@ params:
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com
-      linkedin: https://linkedin.com
+      #linkedin: https://linkedin.com
       twitter: https://twitter.com
-      instagram: https://instagram.com
+      #instagram: https://instagram.com
       facebook: https://facebook.com
 
   # List pages like blogs and posts
@@ -447,7 +471,7 @@ params:
     read: "Leer"
     toc: "Tabla de Contenido"
     copyright: "Todos los derechos reservados"
-    pageNotFound: "Page not found"
+    pageNotFound: "Página no encontrada"
     emailText: "Check out this site"
 
   datesFormat:
