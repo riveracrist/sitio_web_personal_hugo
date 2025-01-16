@@ -140,11 +140,11 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
+          url: https://github.com/riveracrist
         - icon: fab fa-x-twitter
-          url: https://example.com
+          url: https://x.com/CrGoo7
         - icon: fab fa-facebook
-          url: https://example.com
+          url: https://www.facebook.com/
       # customIcons:
       #   - icon: /fav.png
       #     url: "https://example.com"
@@ -363,13 +363,13 @@ params:
         badges:
           - "Quarto"
           - "Markdown"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+        # links:
+        #   - icon: fa fa-envelope
+        #     url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/hugo-profile
+        #   - icon: fab fa-twitter
+        #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
       - title: Tablero de Datos
         content: Plantilla de un tablero de datos estático, creado con la biblioteca Flexdashboard de R.
@@ -381,9 +381,9 @@ params:
           - "Flexdashboard"
           - "Markdown"
           - "R"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/converter
 
       - title: Tablero de Datos con Arduino
         content: Tablero de datos que visualiza los datos capturados con sensores programados con Arduino.
@@ -395,9 +395,9 @@ params:
           - "Arduino"
           - "Flexdashboard"
           - "R"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
             
       - title: R + RStudio + MySQL
         content: Documento Markdown que muestra cómo conectarse a una base de datos MySQL desde RStudio para realizar consultas y gráficos.
@@ -409,9 +409,9 @@ params:
           - "MySQL"
           - "ggplot2"
           - "Markdown"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/converter
 
       - title: Análisis Exploratorio Covid-19 Colombia
         content: Breve análisis descriptivo con R haciendo uso de datos abiertos del gobierno de Colombia.
@@ -423,9 +423,23 @@ params:
           - "Arduino"
           - "Flexdashboard"
           - "R"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
+            
+      - title: Ejemplo de cuestonario con Paquete de R learnr
+        content: Herramienta para crear tutoriales interactivos o cuestionarios que se pueden publicar en shinyapps.
+        image: /images/projects/learnr.png
+        featured:
+          name: Link
+          link: https://m8juuc-riveracrist.shinyapps.io/Circuitos/
+        badges:
+          - "learnr"
+          - "Educación"
+          - "R"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   # contact:
