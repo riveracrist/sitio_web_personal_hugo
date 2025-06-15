@@ -126,7 +126,7 @@ params:
     intro: ""
     title: "¡Bienvenid@!"
     subtitle: "Gracias por visitar mi página"
-    content: "Este es un espacio donde comparto mis proyectos, habilidades y experiencias en programación, análisis de datos y desarrollo de software. Aquí encontrarás detalles sobre mi formación y mis intereses en tecnología."
+    content: "Este es un espacio dedicado a compartir mis intereses relacionados con la tecnonlogía y algo más."
     image: /images/Captura.png
     bottomImage:
       enable: true
@@ -155,11 +155,13 @@ params:
     title: "Conóceme"
     image: "/images/microchip.png"
     content: |-
-      Como estudiante de Ingeniería de Telecomunicaciones y aprendiz de Análisis y Desarrollo de Software, tengo un fuerte interés en la ciencia de datos y las tecnologías de la información y las comunicaciones (TIC), mi deseo es entender cómo estas herramientas dan forma a nuestro entorno digital. Esto me ha motivado a aprender algunos lenguajes de programación, fundamentos de electrónica, y conceptos matemáticos aplicados.
+      Aprendiz de Ingeniería en Telecomunicaciones y aprendiz de Análisis y Desarrollo de Software, con una curiosidad por la ciencia de datos y las tecnologías de la información y las comunicaciones (TIC).
       
-      Me he enfocado en [R](https://www.r-project.org/) y [Python](https://www.python.org/) para el análisis y la visualización de datos, considerándolos herramientas muy eficaces y versátiles. Además, he desarrollado prototipos personales de IoT y sistemas automatizados usando [Arduino](https://www.arduino.cc/) y [Raspberry Pi](https://www.raspberrypi.com/), lo que me ha permitido comprender la interconexión entre hardware y software.
+      Tengo un interés particular en el aprendizaje de lenguajes de programación como R y Python, debido a su aplicabilidad en el análisis y visualización de información. Deseo adquirir un conocimiento sólido en la gestión de bases de datos utilizando SQL, comprender cómo se estructuran, almacenan y consultan los datos de forma eficiente.
       
-      También concentro mi interés hacia la gestión de bases de datos con SQL, el desarrollo web con HTML, CSS y JavaScript, y la programación orientada a objetos con C++.
+      Paralelamente, me motiva explorar el campo de la electrónica, donde utilizo plataformas como Arduino y Raspberry Pi para comprender los principios básicos del hardware, su conexión con el desarrollo de soluciones tecnológicas y la automatización.
+      
+      
     skills:
       enable: true
       title: "Otros Intereses:"
@@ -176,7 +178,7 @@ params:
   # Experience
   experience:
     enable: true
-    title: "Cursos Complementarios"
+    title: "Aprendiendo sobre"
     items:
       - job: "Bases de Datos"
         company: "Oracle Academy"
@@ -302,21 +304,22 @@ params:
         date: "2015 - No completado"
         #GPA: "3.8 out of 5.0"
         content: |-
-          Cursos Aprobados:
-            - Geometría Vectorial y Analítica. 
-            - Álgebra Lineal.
-            - Cálculo Diferencial.
-            - Calculo Integral.
-            - Estadística.
-            - Física Mecánica.
-            - Electricidad y Magnetismo.
-            - Análisis de Circuitos Eléctricos.
-            - Instrumentación.
-            
           Actividades Extracurriculares:
             - Auxiliar de Docencia Laboratorio de Geotecnia y Pavimentos.
             - Auxiliar Administrativo.
             - [Semillero en Ciencia de Datos R y Python](https://semillerorpy.netlify.app/).
+            
+            
+        # Cursos Aprobados:
+        #   - Geometría Vectorial y Analítica. 
+        #   - Álgebra Lineal.
+        #   - Cálculo Diferencial.
+        #   - Calculo Integral.
+        #   - Estadística.
+        #   - Física Mecánica.
+        #   - Electricidad y Magnetismo.
+        #   - Análisis de Circuitos Eléctricos.
+        #   - Instrumentación.
       
       # - title: "High School"
       #   school:
