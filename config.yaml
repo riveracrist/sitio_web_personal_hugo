@@ -178,7 +178,7 @@ params:
   # Experience
   experience:
     enable: true
-    title: "Aprendiendo sobre"
+    title: "Formación complementaria"
     items:
       - job: "Bases de Datos"
         company: "Oracle Academy"
