@@ -420,15 +420,16 @@ params:
         #   - icon: fab fa-github
         #     url: https://github.com/gurusabarish/converter
 
-      - title: Análisis Exploratorio Covid-19 Colombia
-        content: Breve análisis descriptivo con R haciendo uso de datos abiertos del gobierno de Colombia.
-        image: /images/projects/covid.png
+      - title: Calculadora código colores resistores
+        content: App alojada de Shiny Apps y creada con el paquete shinydasboard de R, que permite calcular el código de colores y el valor de resistencia de un resistor.
+        image: /images/projects/shinydashboard_resistores.png
         featured:
           name: Link
-          link: https://rpubs.com/Semilla_389/691934
+          link: https://m8juuc-riveracrist.shinyapps.io/calculadora_resistores/
         badges:
-          - "Arduino"
-          - "Flexdashboard"
+          - "Circuitos"
+          - "ShinyApps"
+          - "Shinydashboard"
           - "R"
         # links:
         #   - icon: fab fa-github
