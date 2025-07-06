@@ -421,7 +421,7 @@ params:
         #     url: https://github.com/gurusabarish/converter
 
       - title: Calculadora código colores resistores
-        content: App alojada de Shiny Apps y creada con el paquete shinydasboard de R, que permite calcular el código de colores y el valor de resistencia de un resistor.
+        content: App alojada en Shiny Apps y creada con el paquete shinydashboard de R, que permite calcular el código de colores y el valor de resistencia de un resistor.
         image: /images/projects/shinydashboard_resistores.png
         featured:
           name: Link
