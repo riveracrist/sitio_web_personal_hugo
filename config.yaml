@@ -166,13 +166,13 @@ params:
       enable: true
       title: "Otros Intereses:"
       items:
+        - "Aprendizaje Automático"
         - "Astronomía"
         - "Automatización"
-        - "Cloud Computing"
+        - "Computación en la nube"
         - "Estadística"
         - "Historia"
         - "Inteligencia Artificial"
-        - "Machine Learning"
         - "Mascotas"
         - "Música"
         - "Video Juegos"
