@@ -167,10 +167,12 @@ params:
       title: "Otros Intereses:"
       items:
         - "Astronomía"
+        - "Automatización"
         - "Cloud Computing"
         - "Estadística"
         - "Historia"
         - "Inteligencia Artificial"
+        - "Machine Learning"
         - "Mascotas"
         - "Música"
         - "Video Juegos"
@@ -278,7 +280,7 @@ params:
         content: |-
           
           Actividades Extracurriculares:
-            - Master Power BI Microsoft - Intelligent Training.
+            - Master class Power BI Microsoft - Intelligent Training.
             - Master class Tu Carrera en la Nube - MinTIC, Google.
             - Taller Aulas de Inovación - Facultad de Ingeniería, Comisión de Regulación de Comunicaciones.
       - title: "Tecnología en Análisis y Desarrollo de Software (ADSO)"
