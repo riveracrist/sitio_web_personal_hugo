@@ -126,7 +126,7 @@ params:
     intro: ""
     title: "¡Bienvenid@!"
     subtitle: "Gracias por visitar mi página"
-    content: "Este es un espacio dedicado a compartir mis intereses relacionados con la tecnonlogía y algo más."
+    content: "Este espacio está destinado a compartir mis intereses en tecnología, innovación y otros temas que despiertan mi curiosidad."
     image: /images/Captura.png
     bottomImage:
       enable: true
