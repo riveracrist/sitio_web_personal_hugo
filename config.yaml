@@ -381,15 +381,15 @@ params:
         #   - icon: fab fa-twitter
         #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Tablero de Datos
-        content: Plantilla de un tablero de datos estático, creado con la biblioteca Flexdashboard de R.
-        image: /images/projects/tablero_black.png
+      - title: Tablero Control
+        content: Dashboard interactivo en R (Shiny y shinydashboard) para monitorear el rendimiento diario y evaluar métricas clave de representantes de servicio al cliente, incluyendo desempeño individual y elegibilidad para comisiones.
+        image: /images/projects/call_center2.png
         featured:
           name: Link
-          link: https://rpubs.com/Semilla_389/986419
+          link: https://m8juuc-riveracrist.shinyapps.io/CallCenterMonitor/
         badges:
-          - "Flexdashboard"
-          - "Markdown"
+          - "Shiny"
+          - "Dashboard"
           - "R"
         # links:
         #   - icon: fab fa-github
