@@ -262,7 +262,7 @@ params:
           - Análisis Exploratorio de Datos con Python.
           - Estructura del Lenguaje de Programación C++ (Nivel I).
           
-      - job: "Bootcamp"
+      - job: "Arquitectura de Nube, Power BI"
         company: "MinTIC"
         companyUrl: "https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion202&buscador_texto=&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1"
         #date: "June 2017 - Nov 2019"
@@ -273,7 +273,8 @@ params:
           enable: false
         content: |
           
-          - Arquitectura en la nube (básico) - 159 horas.
+          - Bootcamp-Arquitectura en la nube (básico).
+          - Introducción a Power BI.
           
       # 
       # - job: "Product Designer"
