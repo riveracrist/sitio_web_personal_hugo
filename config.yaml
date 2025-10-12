@@ -218,7 +218,7 @@ params:
           <img src="/images/python-essentials-1.png" alt="drawing" style="width:130px;"/>
           <img src="/images/python-essentials-2.png" alt="drawing" style="width:130px;"/>
 
-      - job: "Google Cloud"
+      - job: "Cloud, IA, Data Analysis"
         company: "Coursera - Google"
         companyUrl: "https://www.coursera.org/"
         #date: "Jan 2020 - Aug 2020"
@@ -237,9 +237,12 @@ params:
           
           - [**Data Analysis with R Programming**](https://coursera.org/share/519a1b54037a183c80b2450cf99e5a80)
           
+          - [**Google AI Essentials**](https://coursera.org/verify/specialization/W9VKFAJ5GHS8)
+          
           <img src="/images/coursera.png" alt="drawing" style="width:130px;"/>
           <img src="/images/kubernetsMinTIC.png" alt="drawing" style="width:130px;"/>
           <img src="/images/coursera.png" alt="drawing" style="width:130px;"/>
+          <img src="/images/google-ai-essentials-v1.png" alt="drawing" style="width:130px;"/>
           
 
       - job: "Desarrollo de Software"
@@ -258,6 +261,20 @@ params:
           - Variables y Estructuras de Control en Python.
           - Análisis Exploratorio de Datos con Python.
           - Estructura del Lenguaje de Programación C++ (Nivel I).
+          
+      - job: "Bootcamp"
+        company: "MinTIC"
+        companyUrl: "https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion202&buscador_texto=&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1"
+        #date: "June 2017 - Nov 2019"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+        content: |
+          
+          - Arquitectura en la nube (básico) - 159 horas.
+          
       # 
       # - job: "Product Designer"
       #   company: "Google"
