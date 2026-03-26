@@ -3,7 +3,7 @@ author: Cristian Rivera
 date: "2025-06-14T23:29:21+05:30"
 description: "Eduación 4.0"
 draft: false
-github_link: https://github.com/gurusabarish/hugo-profile
+github_link: https://github.com/riveracrist/
 image: /images/eduacion.png
 tags:
 - Educación

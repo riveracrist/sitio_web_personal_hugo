@@ -9,6 +9,8 @@
 /resources/_gen/
 /assets/jsconfig.json
 hugo_stats.json
+config_original.yaml
+
 
 # Executable may be added to repository
 hugo.exe
@@ -17,3 +19,9 @@ hugo.linux
 
 # Temporary lock file while building
 .hugo_build.lock
+
+# R files
+/R/
+.Rhistory
+.Rprofile
+setup-R.R

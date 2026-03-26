@@ -144,7 +144,7 @@ Cristian Rivera G.
         let profileHeaderElem = document.getElementById("profileHeader");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
-        let showNavBarOnScrollUp =  true ;
+        let showNavBarOnScrollUp =  false ;
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -169,13 +169,15 @@ Cristian Rivera G.
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                Cristian Rivera González
+                <img src="/euler-diagram.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Cristian Rivera
                 
             </a>
 
             
                 <div>
-                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Buscar'
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Buscar en blog'
                         aria-label="Search" oninput="searchOnChange(event)">
                 </div>
             
@@ -194,7 +196,7 @@ Cristian Rivera G.
                     
                         <li class="nav-item navbar-text d-block d-md-none">
                             <div class="nav-link">
-                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Buscar' aria-label="Search" oninput="searchOnChange(event)">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Buscar en blog' aria-label="Search" oninput="searchOnChange(event)">
                             </div>
                         </li>
                     
@@ -207,6 +209,13 @@ Cristian Rivera G.
                     </li>
                     
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Formación complementaria
+                        </a>
+                    </li>
                     
 
                     
@@ -222,13 +231,20 @@ Cristian Rivera G.
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#projects"
                             aria-label="projects">
-                            Proyectos
+                            Proyectos Personales
                         </a>
                     </li>
                     
 
                     
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contáctame
+                        </a>
+                    </li>
                     
 
                     
@@ -240,29 +256,6 @@ Cristian Rivera G.
                             
                             Blog
                         </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Example dropdown menu">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
-                            
-                            <a class="dropdown-item text-center nav-link" href="/"
-                                title="example dropdown 1">
-                                example 1
-                            </a>
-                            
-                            <a class="dropdown-item text-center nav-link" href="/"
-                                title="example dropdown 2">
-                                example 2
-                            </a>
-                            
-                        </div>
                     </li>
                     
                     
@@ -309,47 +302,41 @@ Cristian Rivera G.
                     ¡Bienvenid@!
                 </h2>
                 <h3>
-                    Gracias por visitar mi página
+                    Desarrollador en formación | Datos · Software · Telecomunicaciones
                 </h3>
                 <p class="hero-content">
-                    Este es un espacio dedicado a explorar algunos contenidos sobre lenguajes de programación, ciencia de datos, y herramientas de uso libre que favorecen el trabajo colaborativo y el intercambio de conocimientos.
+                    Este espacio está destinado a compartir mis proyectos, intereses en tecnología e innovación, y el proceso de aprendizaje continuo que me define.
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
                         
-                        <a href="#" class="btn" download
+                        <a href="#projects" class="btn" ZgotmplZ
 			  >
-                            Blog
+                            Proyectos
                         </a>
                         
                     </div>
                     <div class="col-auto px-0 h-100"><span>
     
     <span class="px-1">
-        <a href="https://example.com" target="_blank" class="btn social-icon">
+        <a href="https://github.com/riveracrist" target="_blank" class="btn social-icon">
             <i class="fab fa-github"></i>
         </a>
     </span>
     
     <span class="px-1">
-        <a href="https://example.com" target="_blank" class="btn social-icon">
+        <a href="https://www.linkedin.com/" target="_blank" class="btn social-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://x.com/CrGoo7" target="_blank" class="btn social-icon">
             <i class="fab fa-x-twitter"></i>
         </a>
     </span>
     
-    <span class="px-1">
-        <a href="https://example.com" target="_blank" class="btn social-icon">
-            <i class="fab fa-facebook"></i>
-        </a>
-    </span>
-    
 
-    
-    <span class="px-1">
-        <a href="https://example.com" target="_blank" class="btn social-icon">
-            <img src="/fav.png">
-        </a>
-    </span>
     
 </span></div>
                 </div>
@@ -644,38 +631,306 @@ Cristian Rivera G.
             </div>
             
             <div class="col-sm-12 col-md-12 col-lg-8 content">
-                <p>Soy un entusiasta y aprendiz del mundo de las tecnologías de la información y las comunicaciones (TIC) con una pasión por la ciencia de datos y el desarrollo de software.</p>
-<p>La curiosidad por comprender cómo las diferentes tecnologías que dan forma a nuestro mundo digital, me ha llevado a dedicar tiempo y esfuerzo en el aprendizaje de algunos lenguajes de programación y áreas de la matemática.</p>
-<p>La elegancia y potencia de <a href="https://www.r-project.org/">R</a> me atraen por su aplicación en el análisis estadístico y la visualización de datos, de igual forma, me he sumergido en los múltiples usos de <a href="https://www.python.org/">Python</a>, aprovechando su versatilidad para interactuar con plataformas como <a href="https://www.arduino.cc/">Arduino</a> y <a href="https://www.raspberrypi.com/">Raspberry Pi</a> a través del desarrollo de prototipos (IoT) y sistemas automatizados con sensores de bajo costo, permitiéndome comprender los fundamentos de la electrónica, la programación y la integración entre el hardware y el software.</p>
-<p>Además, he profundizado mis conocimientos en <a href="https://es.wikipedia.org/wiki/SQL">SQL</a> para gestionar bases de datos de manera efectiva y en <a href="https://isocpp.org/">C++</a> para entender la lógica y la construcción de los algoritmos.</p>
+                <p>Estudiante de Ingeniería en Telecomunicaciones (Universidad de Antioquia) y Tecnología en Análisis y Desarrollo de Software (SENA), con enfoque en ciencia de datos, desarrollo de software y tecnologías de la información y las comunicaciones (TIC).</p>
+<p>Cuento con habilidades en programación en <strong>Python</strong>, <strong>R</strong> y <strong>C++</strong>, lenguajes que he aplicado en análisis de datos, visualización, automatización y desarrollo de soluciones tecnológicas. Tengo habilidades en la gestión y consulta de bases de datos relacionales con <strong>SQL</strong>, incluyendo su uso en la plataforma <strong>Databricks</strong> para el procesamiento y análisis de datos a escala. Complementariamente, manejo el framework <strong>Scrapy</strong> para la extracción automatizada de datos desde la web (<em>web scraping</em>).</p>
+<p>Utilizo <strong>Git</strong> para el control de versiones y la gestión de repositorios, lo que me permite colaborar en proyectos de desarrollo de manera ordenada y eficiente.</p>
+<p>Me interesa la intersección entre el hardware y el software: trabajo con plataformas como <strong>Arduino</strong> y <strong>Raspberry Pi</strong> para explorar la electrónica, la automatización y el desarrollo de soluciones IoT.</p>
 
 
                 
-                Algunos de mis Intereses:
+                Otros intereses:
                 <ul>
                     
-                    <li><a href="https://www.arduino.cc/">Arduino</a></li>
+                    <li>Aprendizaje Automático</li>
+                    
+                    <li>Inteligencia Artificial</li>
+                    
+                    <li>Computación en la nube</li>
                     
                     <li>Automatización</li>
                     
-                    <li><a href="https://isocpp.org/">C++</a></li>
-                    
-                    <li>Circuitos Eléctricos</li>
-                    
                     <li>Estadística</li>
                     
-                    <li>HTML</li>
+                    <li>Astronomía</li>
                     
-                    <li><a href="https://www.python.org/">Python</a></li>
+                    <li>Historia</li>
                     
-                    <li><a href="https://www.r-project.org/">R</a></li>
+                    <li>Música</li>
                     
-                    <li><a href="https://www.raspberrypi.com/">Raspberry Pi</a></li>
+                    <li>Video Juegos</li>
                     
-                    <li><a href="https://es.wikipedia.org/wiki/SQL">SQL</a></li>
+                    <li>Mascotas</li>
                     
                 </ul>
                 
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Formación complementaria</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link active bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Oracle-Academy--tab'
+                                data-bs-target='#pills-Oracle-Academy-'
+                                aria-controls='Oracle-Academy-' 
+                            >
+                                Oracle Academy
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Cisco-Networking-Academy--tab'
+                                data-bs-target='#pills-Cisco-Networking-Academy-' 
+                                aria-controls='Cisco-Networking-Academy-'
+                            >
+                                Cisco Networking Academy
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Coursera---Google--tab'
+                                data-bs-target='#pills-Coursera---Google-' 
+                                aria-controls='Coursera---Google-'
+                            >
+                                Coursera - Google
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='SENA--tab'
+                                data-bs-target='#pills-SENA-' 
+                                aria-controls='SENA-'
+                            >
+                                SENA
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='MinTIC--tab'
+                                data-bs-target='#pills-MinTIC-' 
+                                aria-controls='MinTIC-'
+                            >
+                                MinTIC
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+                        
+                        
+                        <div 
+                            class="tab-pane fade show active bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Oracle-Academy-'
+                            aria-labelledby='pills-Oracle-Academy--tab'
+                        >
+                            <div>
+                                <span class="h4">Bases de Datos</span>
+                                <small>-</small>
+                                <a href="https://www.netacad.com/" target="_blank">Oracle Academy</a>
+                                <div class="pb-1">
+                                    <small></small>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            <ul>
+<li><a href="https://academy.oracle.com/pages/coursedescription/Oracle%20Academy%20Database%20Design%20Course%20Description.pdf"><strong>Database Design</strong></a>.</li>
+</ul>
+<img src="/images/oracle.png" alt="drawing" style="width:130px;"/>
+
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Cisco-Networking-Academy-'
+                            aria-labelledby='pills-Cisco-Networking-Academy--tab'
+                        >
+                            <div>
+                                <span class="h4">Python</span>
+                                <small>-</small>
+                                <a href="https://www.netacad.com/" target="_blank">Cisco Networking Academy</a>
+                                
+                                <div class="pb-1">
+                                    <small></small>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <ul>
+<li>
+<p><a href="https://www.netacad.com/courses/python-essentials-1?courseLang=en-US"><strong>Python Essentials 1</strong></a>.</p>
+</li>
+<li>
+<p><a href="https://www.netacad.com/courses/python-essentials-2?courseLang=en-US"><strong>Python Essentials 2</strong></a>.</p>
+</li>
+</ul>
+<img src="/images/python-essentials-1.png" alt="drawing" style="width:130px;"/>
+<img src="/images/python-essentials-2.png" alt="drawing" style="width:130px;"/>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Coursera---Google-'
+                            aria-labelledby='pills-Coursera---Google--tab'
+                        >
+                            <div>
+                                <span class="h4">Cloud, IA, Data Analysis</span>
+                                <small>-</small>
+                                <a href="https://www.coursera.org/" target="_blank">Coursera - Google</a>
+                                
+                                <div class="pb-1">
+                                    <small></small>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <ul>
+<li>
+<p><a href="https://www.coursera.org/account/accomplishments/verify/K34OW9CJ58MP"><strong>Google Cloud Fundamentals Core Infrastructure</strong></a>.</p>
+</li>
+<li>
+<p><a href="https://www.coursera.org/account/accomplishments/verify/6X8ZTZISL4HQ"><strong>Architecting with Google Kubernetes Engine</strong></a>.</p>
+</li>
+<li>
+<p><a href="https://coursera.org/share/519a1b54037a183c80b2450cf99e5a80"><strong>Data Analysis with R Programming</strong></a></p>
+</li>
+<li>
+<p><a href="https://coursera.org/verify/specialization/W9VKFAJ5GHS8"><strong>Google AI Essentials</strong></a></p>
+</li>
+</ul>
+<img src="/images/coursera.png" alt="drawing" style="width:130px;"/>
+<img src="/images/kubernetsMinTIC.png" alt="drawing" style="width:130px;"/>
+<img src="/images/coursera.png" alt="drawing" style="width:130px;"/>
+<img src="/images/google-ai-essentials-v1.png" alt="drawing" style="width:130px;"/>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-SENA-'
+                            aria-labelledby='pills-SENA--tab'
+                        >
+                            <div>
+                                <span class="h4">Desarrollo de Software</span>
+                                <small>-</small>
+                                <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion202&amp;buscador_texto=&amp;ffv=-1&amp;ciudad=Ej%3A&#43;Cali%2C&#43;Cartagena&amp;campoEmpresa=&amp;nfct=-1" target="_blank">SENA</a>
+                                
+                                <div class="pb-1">
+                                    <small></small>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <ul>
+<li>Bases de Datos: generalidades y sistemas de gestión.</li>
+<li>Construcción de Bases de Datos con MySQL.</li>
+<li>Variables y Estructuras de Control en Python.</li>
+<li>Análisis Exploratorio de Datos con Python.</li>
+<li>Estructura del Lenguaje de Programación C++ (Nivel I).</li>
+</ul>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-MinTIC-'
+                            aria-labelledby='pills-MinTIC--tab'
+                        >
+                            <div>
+                                <span class="h4">Arquitectura de Nube, Power BI</span>
+                                <small>-</small>
+                                <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion202&amp;buscador_texto=&amp;ffv=-1&amp;ciudad=Ej%3A&#43;Cali%2C&#43;Cartagena&amp;campoEmpresa=&amp;nfct=-1" target="_blank">MinTIC</a>
+                                
+                                <div class="pb-1">
+                                    <small></small>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <ul>
+<li>Bootcamp - Arquitectura en la nube (básico).</li>
+<li>Introducción a Power BI.</li>
+</ul>
+
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -696,37 +951,25 @@ Cristian Rivera G.
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-end">
-                                    <small></small>
+                                    <small>2024 - En curso</small>
                                 </div>
-                                <h5 class="card-title">Ingeniería de Control</h5>
+                                <h5 class="card-title">Ingeniería de Telecomunicaciones</h5>
                                 
                                 
-                                <a href="https://unal.edu.co/" target="_blank">
+                                <a href="https://www.udea.edu.co/" target="_blank">
                                     <h6>
-                                    Universidad Nacional de Colombia, Medellín
+                                    Universidad de Antioquia, Medellín
                                     </h6>
                                 </a>
                                 
 
                                 
                                 <div class="py-1 education-content">
-                                    <p>Cursos:</p>
+                                    <p>Actividades Extracurriculares:</p>
 <ul>
-<li>Geometría Vectorial y Analítica.</li>
-<li>Álgebra Lineal.</li>
-<li>Cálculo Diferencial.</li>
-<li>Calculo Integral.</li>
-<li>Estadística.</li>
-<li>Física Mecánica.</li>
-<li>Electricidad y Magnetismo.</li>
-<li>Análisis de Circuitos Eléctricos.</li>
-<li>Instrumentación.</li>
-</ul>
-<p>Actividades Extracurriculares:</p>
-<ul>
-<li>Auxiliar de Docencia Laboratorio de Geotecnia y Pavimentos.</li>
-<li>Auxiliar Administrativo.</li>
-<li><a href="https://semillerorpy.netlify.app/">Semillero en Ciencia de Datos R y Python</a>.</li>
+<li>Master class Power BI Microsoft - Intelligent Training.</li>
+<li>Master class Tu Carrera en la Nube - MinTIC, Google.</li>
+<li>Taller Aulas de Innovación - Facultad de Ingeniería, Comisión de Regulación de Comunicaciones.</li>
 </ul>
 
                                 </div>
@@ -746,45 +989,74 @@ Cristian Rivera G.
                         <div class="card">
                             <div class="card-body">
                                 <div class="float-end">
-                                    <small>2023 - 2025</small>
+                                    <small>2023 - En curso</small>
                                 </div>
                                 <h5 class="card-title">Tecnología en Análisis y Desarrollo de Software (ADSO)</h5>
                                 
                                 
                                 <a href="https://www.sena.edu.co/es-co/Paginas/default.aspx" target="_blank">
                                     <h6>
-                                    Servicio Nacional de Aprendizaje - SENA
+                                    Centro Agroempresarial y Minero - SENA, Regional Bolívar
                                     </h6>
                                 </a>
                                 
 
                                 
                                 <div class="py-1 education-content">
-                                    <p>Competencias:</p>
+                                    <p>Actividades Extracurriculares:</p>
 <ul>
-<li>Herramientas TIC.</li>
-<li>Instrumentos de Recolección de Información.</li>
-<li>Especificación Requerimientos Funcionales y no Funcionales.</li>
-<li>Evaluación de Requerimientos.</li>
-<li>Metodologías de Desarrollo de Software.</li>
-</ul>
-<p>Cursos Complementarios:</p>
-<ul>
-<li>Bases de Datos: generalidades y sistemas de gestión.</li>
-<li>Construcción Bases de Datos con MySQL.</li>
-<li>Variables y Estructuras de Control en Python.</li>
-<li>Análisis Exploratorio de Datos con Python.</li>
-<li>Estructura del Lenguaje de Programación C++ (Nivel I).</li>
+<li>Vocero de la ficha de ADSO.</li>
+<li>Representante de aprendices modalidad virtual.</li>
+<li>Encuentro Zonal de Liderazgo 2024. Neiva, Huila.</li>
+<li>Cumbre de Representantes de Aprendices 2025. Quibdó, Chocó.</li>
 </ul>
 
                                 </div>
 
                                 
                                 <div class="py-1">
-                                    <a href="https://example.com" class="btn">
+                                    <a href="https://riveracrist.github.io/" class="btn">
                                         Proyecto Página Web ADSO
                                     </a>
                                 </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2015 - No completado</small>
+                                </div>
+                                <h5 class="card-title">Ingeniería de Control</h5>
+                                
+                                
+                                <a href="https://unal.edu.co/" target="_blank">
+                                    <h6>
+                                    Universidad Nacional de Colombia, Medellín
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1 education-content">
+                                    <p>Actividades Extracurriculares:</p>
+<ul>
+<li>Auxiliar de Docencia, Laboratorio de Geotecnia y Pavimentos.</li>
+<li>Auxiliar Administrativo.</li>
+<li><a href="https://semillerorpy.netlify.app/">Semillero en Ciencia de Datos R y Python</a>.</li>
+</ul>
+
+                                </div>
+
                                 
                             </div>
                         </div>
@@ -799,7 +1071,7 @@ Cristian Rivera G.
 
 <section id="projects" class="py-5">
     <div class="container">
-        <h3 class="text-center">Proyectos</h3>
+        <h3 class="text-center">Proyectos Personales</h3>
         <div class="row justify-content-center px-3 px-md-5">
             
             <div class="col-lg-4 col-md-6 my-3">
@@ -817,34 +1089,16 @@ Cristian Rivera G.
                         </div>
                         <h5 class="card-title bg-transparent mt-1">Sitio Web ADSO</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            Página Web creada con Quarto para la tecnología de Análisis y Desarrollo de Software del SENA.
+                            Página web creada con Quarto para la tecnología de Análisis y Desarrollo de Software del SENA.
                         </div>
                     </div>
                     
                     <div class="card-footer py-3">
                         
-                        <span class="m-1 mx-2">
-                            <a href="mailto:?subject=Hugo%20Profile%20Template&amp;body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f" target="_blank">
-                                <i class="fa fa-envelope"></i>
-                            </a>
-                        </span>
-                        
-                        <span class="m-1 mx-2">
-                            <a href="https://github.com/gurusabarish/hugo-profile" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </span>
-                        
-                        <span class="m-1 mx-2">
-                            <a href="https://twitter.com/intent/tweet?text=Check&#43;it&#43;out:&amp;url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </span>
-                        
                         
                         <span class="float-end">
                             <a class="btn btn-sm" href="https://riveracrist.github.io/" target="_blank">
-                                Link
+                                Ver proyecto
                             </a>
                         </span>
                         
@@ -854,38 +1108,32 @@ Cristian Rivera G.
             </div>
             
             <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="Tablero de Datos">
+                <div class="card my-3 h-100" title="Tablero de Control">
                     <div class="card-head">
-                        <img class="card-img-top" src="/images/projects/tablero_black.png" alt="Tablero de Datos">
+                        <img class="card-img-top" src="/images/projects/call_center2.png" alt="Tablero de Control">
                     </div>
                     <div class="card-body bg-transparent p-3">
                         <div class="pb-2 bg-transparent">
                             
-                            <span class="badge badge-secondary">Flexdashboard</span>
+                            <span class="badge badge-secondary">Shiny</span>
                             
-                            <span class="badge badge-secondary">Markdown</span>
+                            <span class="badge badge-secondary">Dashboard</span>
                             
                             <span class="badge badge-secondary">R</span>
                             
                         </div>
-                        <h5 class="card-title bg-transparent mt-1">Tablero de Datos</h5>
+                        <h5 class="card-title bg-transparent mt-1">Tablero de Control</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            Plantilla de un tablero de datos estático, creado con la biblioteca Flexdashboard de R.
+                            Dashboard interactivo en R (Shiny y shinydashboard) para monitorear el rendimiento diario y evaluar métricas clave de representantes de servicio al cliente, incluyendo desempeño individual y elegibilidad para comisiones.
                         </div>
                     </div>
                     
                     <div class="card-footer py-3">
                         
-                        <span class="m-1 mx-2">
-                            <a href="https://github.com/gurusabarish/converter" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </span>
-                        
                         
                         <span class="float-end">
-                            <a class="btn btn-sm" href="https://rpubs.com/Semilla_389/986419" target="_blank">
-                                Link
+                            <a class="btn btn-sm" href="https://m8juuc-riveracrist.shinyapps.io/CallCenterMonitor/" target="_blank">
+                                Ver proyecto
                             </a>
                         </span>
                         
@@ -911,22 +1159,16 @@ Cristian Rivera G.
                         </div>
                         <h5 class="card-title bg-transparent mt-1">Tablero de Datos con Arduino</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            Tablero de datos que visualiza los datos capturados con sensores programados con Arduino.
+                            Dashboard que visualiza en tiempo real los datos capturados por sensores conectados y programados con Arduino.
                         </div>
                     </div>
                     
                     <div class="card-footer py-3">
                         
-                        <span class="m-1 mx-2">
-                            <a href="https://github.com/gurusabarish/HugoProfileV2" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </span>
-                        
                         
                         <span class="float-end">
                             <a class="btn btn-sm" href="https://rpubs.com/Semilla_389/1138902" target="_blank">
-                                Link
+                                Ver proyecto
                             </a>
                         </span>
                         
@@ -952,22 +1194,16 @@ Cristian Rivera G.
                         </div>
                         <h5 class="card-title bg-transparent mt-1">R &#43; RStudio &#43; MySQL</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            Documento Markdown que muestra cómo conectarse a una base de datos MySQL desde RStudio para realizar consultas y gráficos.
+                            Documento Markdown que demuestra cómo conectarse a una base de datos MySQL desde RStudio para ejecutar consultas y generar visualizaciones gráficas.
                         </div>
                     </div>
                     
                     <div class="card-footer py-3">
                         
-                        <span class="m-1 mx-2">
-                            <a href="https://github.com/gurusabarish/converter" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </span>
-                        
                         
                         <span class="float-end">
                             <a class="btn btn-sm" href="https://rpubs.com/Semilla_389/1069870" target="_blank">
-                                Link
+                                Ver proyecto
                             </a>
                         </span>
                         
@@ -977,38 +1213,69 @@ Cristian Rivera G.
             </div>
             
             <div class="col-lg-4 col-md-6 my-3">
-                <div class="card my-3 h-100" title="Análisis Exploratorio Covid-19 Colombia">
+                <div class="card my-3 h-100" title="Calculadora de Código de Colores para Resistores">
                     <div class="card-head">
-                        <img class="card-img-top" src="/images/projects/covid.png" alt="Análisis Exploratorio Covid-19 Colombia">
+                        <img class="card-img-top" src="/images/projects/shinydashboard_resistores.png" alt="Calculadora de Código de Colores para Resistores">
                     </div>
                     <div class="card-body bg-transparent p-3">
                         <div class="pb-2 bg-transparent">
                             
-                            <span class="badge badge-secondary">Arduino</span>
+                            <span class="badge badge-secondary">Circuitos</span>
                             
-                            <span class="badge badge-secondary">Flexdashboard</span>
+                            <span class="badge badge-secondary">ShinyApps</span>
+                            
+                            <span class="badge badge-secondary">Shinydashboard</span>
                             
                             <span class="badge badge-secondary">R</span>
                             
                         </div>
-                        <h5 class="card-title bg-transparent mt-1">Análisis Exploratorio Covid-19 Colombia</h5>
+                        <h5 class="card-title bg-transparent mt-1">Calculadora de Código de Colores para Resistores</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            Breve análisis descriptivo con R haciendo uso de datos abiertos del gobierno de Colombia.
+                            Aplicación web alojada en ShinyApps, construida con shinydashboard en R, que permite calcular el valor de resistencia a partir del código de colores de un resistor.
                         </div>
                     </div>
                     
                     <div class="card-footer py-3">
                         
-                        <span class="m-1 mx-2">
-                            <a href="https://github.com/gurusabarish/HugoProfileV2" target="_blank">
-                                <i class="fab fa-github"></i>
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://m8juuc-riveracrist.shinyapps.io/calculadora_resistores/" target="_blank">
+                                Ver proyecto
                             </a>
                         </span>
                         
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Cuestionario Interactivo con el Paquete learnr">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/learnr.png" alt="Cuestionario Interactivo con el Paquete learnr">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">learnr</span>
+                            
+                            <span class="badge badge-secondary">Educación</span>
+                            
+                            <span class="badge badge-secondary">R</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Cuestionario Interactivo con el Paquete learnr</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Herramienta educativa que utiliza el paquete learnr de R para crear tutoriales y cuestionarios interactivos publicados en ShinyApps.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
                         
                         <span class="float-end">
-                            <a class="btn btn-sm" href="https://rpubs.com/Semilla_389/691934" target="_blank">
-                                Link
+                            <a class="btn btn-sm" href="https://m8juuc-riveracrist.shinyapps.io/Circuitos/" target="_blank">
+                                Ver proyecto
                             </a>
                         </span>
                         
@@ -1020,6 +1287,37 @@ Cristian Rivera G.
             
         </div>
     </div>
+</section>
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Contáctame</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-md-5">
+                <div class="col-md-8 py-3">
+                    <div class="text-center">
+                        Si tienes alguna pregunta, propuesta de colaboración o simplemente quieres conectar, ¡escríbeme!
+                    </div>
+                    
+                    <div class="row justify-content-center">
+                        <form id="contact-form" action="https://formspree.io/f/abcdefgh" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
+                            <div class="form-group pt-3">
+                                <input type="email" class="form-control"  name="email" required="true" placeholder='Tu correo electrónico'>
+                            </div>
+                            <div class="form-group pt-3">
+                                <textarea class="form-control" name="message" required="true" placeholder='Escribe tu mensaje aquí' rows="3"></textarea>
+                            </div>
+                            <div class="form-group text-center pt-3">
+                                <button type="submit" class="btn">Enviar mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-status"></div>
 </section>
 
 
@@ -1051,75 +1349,46 @@ Cristian Rivera G.
             <div class="card h-100">
                 
                 <div class="card-header">
+                    <a href="/blogs/webscraping-scrapy/">
+                        <img src="/images/webscraping.png" class="card-img-top" alt="Web Scraping con Python y Scrapy">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/webscraping-scrapy/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Web Scraping con Python y Scrapy">Web Scraping con Python y …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>¿Qué es el Web Scraping? Vivimos en un mundo donde una cantidad enorme de información está disponible en internet: precios de productos, noticias, datos climáticos, ofertas de empleo, resultados deportivos y mucho más. Sin embargo, gran parte de esa información no está lista para ser analizada …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Mar 25, 2026</span>
+                    <a href="/blogs/webscraping-scrapy/" class="float-end btn btn-outline-info btn-sm">Leer</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
                     <a href="/blogs/mipost/">
-                        <img src="/images/look.jpg" class="card-img-top" alt="Mi Post de Prueba">
+                        <img src="/images/eduacion.png" class="card-img-top" alt="Educación como Impulsor de Equidad Social">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/mipost/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Mi Post de Prueba">Mi Post de Prueba</h5>
+                        <h5 class="card-title bg-transparent" title="Educación como Impulsor de Equidad Social">Educación como Impulsor …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p>Definición Esto es un párrafo para probas cómo se ve en la publicación y dentro de el blog.
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-Blockquotes The blockquote element represents content that is quoted …</p>
+                        <p>Introducción El presente documento es un ejercicio académico de escritura argumentativa cuyo propósito es desarrollar y sustentar la idea de que la Educación 4.0 puede convertirse en un motor clave para la equidad social. A través del análisis crítico de fuentes académicas, se busca evidenciar cómo …</p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 14, 2023</span>
+                    <span class="float-start">Jun 14, 2025</span>
                     <a href="/blogs/mipost/" class="float-end btn btn-outline-info btn-sm">Leer</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/math/">
-                        <img src="/images/mathjax.png" class="card-img-top" alt="Render Math With Mathjax">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/math/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Render Math With Mathjax">Render Math With Mathjax</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>Mathjax Math equations can be rendered using Mathjax syntax with AMS symbol support.
-Optionally enable this on a per-page basis by adding mathjax: true to your frontmatter.
-Then, use $$ ... $$ on a line by itself to render a block equation:
-$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 9, 2022</span>
-                    <a href="/blogs/math/" class="float-end btn btn-outline-info btn-sm">Leer</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/markdown-syntax/">
-                        <img src="/images/post.jpg" class="card-img-top" alt="Markdown Syntax">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/markdown-syntax/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Markdown Syntax">Markdown Syntax</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>Paragraph Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus …</p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Apr 3, 2021</span>
-                    <a href="/blogs/markdown-syntax/" class="float-end btn btn-outline-info btn-sm">Leer</a>
                 </div>
             </div>
         </div>
@@ -1130,7 +1399,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
 <div class="text-center pt-2">
     
     <span class="px-1">
-        <a href="https://github.com" aria-label="github">
+        <a href="https://github.com/riveracrist" aria-label="github">
             <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
                 <path
                     d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
@@ -1157,7 +1426,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
 
     
     <span class="px-1">
-        <a href="https://linkedin.com" aria-label="linkedin">
+        <a href="https://www.linkedin.com/" aria-label="linkedin">
             <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
                 viewBox="0 0 512 512">
                 <rect width="512" height="512" fill="#0077b5" rx="15%" />
@@ -1170,7 +1439,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
     
 
     
-    <a href="https://twitter.com" aria-label="twitter">
+    <a href="https://x.com/CrGoo7" aria-label="twitter">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
             <path fill="#03a9f4"
                 d="M42,37c0,2.762-2.239,5-5,5H11c-2.762,0-5-2.238-5-5V11c0-2.762,2.238-5,5-5h26c2.761,0,5,2.238,5,5 V37z" />
@@ -1181,45 +1450,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
     
 
     
-    <a href="https://instagram.com" aria-label="instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899"
-                gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#fd5" />
-                <stop offset=".328" stop-color="#ff543f" />
-                <stop offset=".348" stop-color="#fc5245" />
-                <stop offset=".504" stop-color="#e64771" />
-                <stop offset=".643" stop-color="#d53e91" />
-                <stop offset=".761" stop-color="#cc39a4" />
-                <stop offset=".841" stop-color="#c837ab" />
-            </radialGradient>
-            <path fill="url(#yOrnnhliCrdS2gy~4tD8ma)"
-                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
-            <radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813"
-                gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#4168c9" />
-                <stop offset=".999" stop-color="#4168c9" stop-opacity="0" />
-            </radialGradient>
-            <path fill="url(#yOrnnhliCrdS2gy~4tD8mb)"
-                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
-            <path fill="#fff"
-                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z" />
-            <circle cx="31.5" cy="16.5" r="1.5" fill="#fff" />
-            <path fill="#fff"
-                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z" />
-        </svg>
-    </a>
-    
 
-    
-    <a href="https://facebook.com" aria-label="facebook">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-            <path fill="#3F51B5"
-                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z" />
-            <path fill="#FFF"
-                d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z" />
-        </svg>
-    </a>
     
 </div><div class="container py-4">
     <div class="row justify-content-center">
@@ -1230,7 +1461,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2024  Todos los derechos reservados
+            &copy; 2026  Todos los derechos reservados
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
@@ -1282,6 +1513,8 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
 
 
 
+
+<script src="/js/contact.js"></script>
 
 
 
