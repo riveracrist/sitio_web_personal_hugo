@@ -2,65 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cristianriverag.netlify.app/tags/astrof%C3%ADsica/</loc>
-    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
+    <loc>https://cristianriverag.netlify.app/tags/automatizaci%C3%B3n/</loc>
+    <lastmod>2026-03-25T10:00:00+05:30</lastmod>
   </url><url>
     <loc>https://cristianriverag.netlify.app/blogs/</loc>
-    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
-  </url><url>
-    <loc>https://cristianriverag.netlify.app/tags/cosmos/</loc>
-    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
+    <lastmod>2026-03-25T10:00:00+05:30</lastmod>
   </url><url>
     <loc>https://cristianriverag.netlify.app/</loc>
-    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
+    <lastmod>2026-03-25T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://cristianriverag.netlify.app/tags/f%C3%ADsica/</loc>
-    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
+    <loc>https://cristianriverag.netlify.app/tags/datos/</loc>
+    <lastmod>2026-03-25T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://cristianriverag.netlify.app/blogs/mipost/</loc>
-    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
+    <loc>https://cristianriverag.netlify.app/tags/programaci%C3%B3n/</loc>
+    <lastmod>2026-03-25T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://cristianriverag.netlify.app/tags/python/</loc>
+    <lastmod>2026-03-25T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://cristianriverag.netlify.app/tags/scrapy/</loc>
+    <lastmod>2026-03-25T10:00:00+05:30</lastmod>
   </url><url>
     <loc>https://cristianriverag.netlify.app/tags/</loc>
-    <lastmod>2023-12-14T23:29:21+05:30</lastmod>
+    <lastmod>2026-03-25T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://cristianriverag.netlify.app/tags/example/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+    <loc>https://cristianriverag.netlify.app/tags/web-scraping/</loc>
+    <lastmod>2026-03-25T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://cristianriverag.netlify.app/tags/markdown-syntax/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+    <loc>https://cristianriverag.netlify.app/blogs/webscraping-scrapy/</loc>
+    <lastmod>2026-03-25T10:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://cristianriverag.netlify.app/tags/mathjax/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+    <loc>https://cristianriverag.netlify.app/tags/digitalizaci%C3%B3n/</loc>
+    <lastmod>2025-06-14T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>https://cristianriverag.netlify.app/blogs/math/</loc>
-    <lastmod>2022-12-09T19:53:33+05:30</lastmod>
+    <loc>https://cristianriverag.netlify.app/tags/educaci%C3%B3n/</loc>
+    <lastmod>2025-06-14T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://cristianriverag.netlify.app/blogs/mipost/</loc>
+    <lastmod>2025-06-14T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://cristianriverag.netlify.app/tags/equidad/</loc>
+    <lastmod>2025-06-14T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://cristianriverag.netlify.app/tags/inclusi%C3%B3n/</loc>
+    <lastmod>2025-06-14T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://cristianriverag.netlify.app/tags/innovaci%C3%B3n/</loc>
+    <lastmod>2025-06-14T23:29:21+05:30</lastmod>
+  </url><url>
+    <loc>https://cristianriverag.netlify.app/tags/tecnolog%C3%ADa/</loc>
+    <lastmod>2025-06-14T23:29:21+05:30</lastmod>
   </url><url>
     <loc>https://cristianriverag.netlify.app/gallery/</loc>
     <lastmod>2022-06-25T18:35:46+05:30</lastmod>
-  </url><url>
-    <loc>https://cristianriverag.netlify.app/blogs/markdown-syntax/</loc>
-    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
-  </url><url>
-    <loc>https://cristianriverag.netlify.app/tags/sample/</loc>
-    <lastmod>2021-04-03T23:29:21+05:30</lastmod>
-  </url><url>
-    <loc>https://cristianriverag.netlify.app/tags/emoji-support/</loc>
-    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
-  </url><url>
-    <loc>https://cristianriverag.netlify.app/blogs/emoji-support/</loc>
-    <lastmod>2021-04-03T22:53:58+05:30</lastmod>
-  </url><url>
-    <loc>https://cristianriverag.netlify.app/tags/placeholder-text/</loc>
-    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
-  </url><url>
-    <loc>https://cristianriverag.netlify.app/blogs/placeholder-text/</loc>
-    <lastmod>2021-04-03T22:41:10+05:30</lastmod>
-  </url><url>
-    <loc>https://cristianriverag.netlify.app/tags/rich-content/</loc>
-    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
-  </url><url>
-    <loc>https://cristianriverag.netlify.app/blogs/rich-content/</loc>
-    <lastmod>2021-04-03T19:53:33+05:30</lastmod>
   </url><url>
     <loc>https://cristianriverag.netlify.app/categories/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>

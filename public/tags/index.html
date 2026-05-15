@@ -139,7 +139,7 @@ Tags | Cristian Rivera G.
         let profileHeaderElem = document.getElementById("profileHeader");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
-        let showNavBarOnScrollUp =  true ;
+        let showNavBarOnScrollUp =  false ;
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -164,13 +164,15 @@ Tags | Cristian Rivera G.
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                Cristian Rivera González
+                <img src="/euler-diagram.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Cristian Rivera
                 
             </a>
 
             
                 <div>
-                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Buscar'
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Buscar en blog'
                         aria-label="Search" oninput="searchOnChange(event)">
                 </div>
             
@@ -189,7 +191,7 @@ Tags | Cristian Rivera G.
                     
                         <li class="nav-item navbar-text d-block d-md-none">
                             <div class="nav-link">
-                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Buscar' aria-label="Search" oninput="searchOnChange(event)">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Buscar en blog' aria-label="Search" oninput="searchOnChange(event)">
                             </div>
                         </li>
                     
@@ -202,6 +204,13 @@ Tags | Cristian Rivera G.
                     </li>
                     
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Formación complementaria
+                        </a>
+                    </li>
                     
 
                     
@@ -217,13 +226,20 @@ Tags | Cristian Rivera G.
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#projects"
                             aria-label="projects">
-                            Proyectos
+                            Proyectos Personales
                         </a>
                     </li>
                     
 
                     
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contáctame
+                        </a>
+                    </li>
                     
 
                     
@@ -235,29 +251,6 @@ Tags | Cristian Rivera G.
                             
                             Blog
                         </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Example dropdown menu">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
-                            
-                            <a class="dropdown-item text-center nav-link" href="/"
-                                title="example dropdown 1">
-                                example 1
-                            </a>
-                            
-                            <a class="dropdown-item text-center nav-link" href="/"
-                                title="example dropdown 2">
-                                example 2
-                            </a>
-                            
-                        </div>
                     </li>
                     
                     
@@ -302,16 +295,16 @@ Tags | Cristian Rivera G.
                 <div class="card h-100">
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/tags/astrof%C3%ADsica/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Astrofísica">Astrofísica</h5>
+                        <a href="/tags/automatizaci%C3%B3n/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Automatización">Automatización</h5>
                         </a>
                         <div class="card-text secondary-font">
                             <p></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Dec 14, 2023</span>
-                        <a href="/tags/astrof%C3%ADsica/" class="float-end btn btn-outline-info btn-sm">Leer</a>
+                        <span class="float-start bg-transparent">Mar 25, 2026</span>
+                        <a href="/tags/automatizaci%C3%B3n/" class="float-end btn btn-outline-info btn-sm">Leer</a>
                     </div>
                 </div>
             </div>
@@ -322,16 +315,16 @@ Tags | Cristian Rivera G.
                 <div class="card h-100">
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/tags/cosmos/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Cosmos">Cosmos</h5>
+                        <a href="/tags/datos/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Datos">Datos</h5>
                         </a>
                         <div class="card-text secondary-font">
                             <p></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Dec 14, 2023</span>
-                        <a href="/tags/cosmos/" class="float-end btn btn-outline-info btn-sm">Leer</a>
+                        <span class="float-start bg-transparent">Mar 25, 2026</span>
+                        <a href="/tags/datos/" class="float-end btn btn-outline-info btn-sm">Leer</a>
                     </div>
                 </div>
             </div>
@@ -342,16 +335,16 @@ Tags | Cristian Rivera G.
                 <div class="card h-100">
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/tags/f%C3%ADsica/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Física">Física</h5>
+                        <a href="/tags/programaci%C3%B3n/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Programación">Programación</h5>
                         </a>
                         <div class="card-text secondary-font">
                             <p></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Dec 14, 2023</span>
-                        <a href="/tags/f%C3%ADsica/" class="float-end btn btn-outline-info btn-sm">Leer</a>
+                        <span class="float-start bg-transparent">Mar 25, 2026</span>
+                        <a href="/tags/programaci%C3%B3n/" class="float-end btn btn-outline-info btn-sm">Leer</a>
                     </div>
                 </div>
             </div>
@@ -410,75 +403,46 @@ Tags | Cristian Rivera G.
             <div class="card h-100">
                 
                 <div class="card-header">
+                    <a href="/blogs/webscraping-scrapy/">
+                        <img src="/images/webscraping.png" class="card-img-top" alt="Web Scraping con Python y Scrapy">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/webscraping-scrapy/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Web Scraping con Python y Scrapy">Web Scraping con Python y …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>¿Qué es el Web Scraping? Vivimos en un mundo donde una cantidad enorme de información está disponible en internet: precios de productos, noticias, datos climáticos, ofertas de empleo, resultados deportivos y mucho más. Sin embargo, gran parte de esa información no está lista para ser analizada …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Mar 25, 2026</span>
+                    <a href="/blogs/webscraping-scrapy/" class="float-end btn btn-outline-info btn-sm">Leer</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
                     <a href="/blogs/mipost/">
-                        <img src="/images/look.jpg" class="card-img-top" alt="Mi Post de Prueba">
+                        <img src="/images/eduacion.png" class="card-img-top" alt="Educación como Impulsor de Equidad Social">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/mipost/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Mi Post de Prueba">Mi Post de Prueba</h5>
+                        <h5 class="card-title bg-transparent" title="Educación como Impulsor de Equidad Social">Educación como Impulsor …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p>Definición Esto es un párrafo para probas cómo se ve en la publicación y dentro de el blog.
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-Blockquotes The blockquote element represents content that is quoted …</p>
+                        <p>Introducción El presente documento es un ejercicio académico de escritura argumentativa cuyo propósito es desarrollar y sustentar la idea de que la Educación 4.0 puede convertirse en un motor clave para la equidad social. A través del análisis crítico de fuentes académicas, se busca evidenciar cómo …</p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 14, 2023</span>
+                    <span class="float-start">Jun 14, 2025</span>
                     <a href="/blogs/mipost/" class="float-end btn btn-outline-info btn-sm">Leer</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/math/">
-                        <img src="/images/mathjax.png" class="card-img-top" alt="Render Math With Mathjax">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/math/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Render Math With Mathjax">Render Math With Mathjax</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>Mathjax Math equations can be rendered using Mathjax syntax with AMS symbol support.
-Optionally enable this on a per-page basis by adding mathjax: true to your frontmatter.
-Then, use $$ ... $$ on a line by itself to render a block equation:
-$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 9, 2022</span>
-                    <a href="/blogs/math/" class="float-end btn btn-outline-info btn-sm">Leer</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/markdown-syntax/">
-                        <img src="/images/post.jpg" class="card-img-top" alt="Markdown Syntax">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/markdown-syntax/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Markdown Syntax">Markdown Syntax</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>Paragraph Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus …</p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Apr 3, 2021</span>
-                    <a href="/blogs/markdown-syntax/" class="float-end btn btn-outline-info btn-sm">Leer</a>
                 </div>
             </div>
         </div>
@@ -489,7 +453,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
 <div class="text-center pt-2">
     
     <span class="px-1">
-        <a href="https://github.com" aria-label="github">
+        <a href="https://github.com/riveracrist" aria-label="github">
             <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
                 <path
                     d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
@@ -516,7 +480,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
 
     
     <span class="px-1">
-        <a href="https://linkedin.com" aria-label="linkedin">
+        <a href="https://www.linkedin.com/" aria-label="linkedin">
             <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
                 viewBox="0 0 512 512">
                 <rect width="512" height="512" fill="#0077b5" rx="15%" />
@@ -529,7 +493,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
     
 
     
-    <a href="https://twitter.com" aria-label="twitter">
+    <a href="https://x.com/CrGoo7" aria-label="twitter">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
             <path fill="#03a9f4"
                 d="M42,37c0,2.762-2.239,5-5,5H11c-2.762,0-5-2.238-5-5V11c0-2.762,2.238-5,5-5h26c2.761,0,5,2.238,5,5 V37z" />
@@ -540,45 +504,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
     
 
     
-    <a href="https://instagram.com" aria-label="instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899"
-                gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#fd5" />
-                <stop offset=".328" stop-color="#ff543f" />
-                <stop offset=".348" stop-color="#fc5245" />
-                <stop offset=".504" stop-color="#e64771" />
-                <stop offset=".643" stop-color="#d53e91" />
-                <stop offset=".761" stop-color="#cc39a4" />
-                <stop offset=".841" stop-color="#c837ab" />
-            </radialGradient>
-            <path fill="url(#yOrnnhliCrdS2gy~4tD8ma)"
-                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
-            <radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813"
-                gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#4168c9" />
-                <stop offset=".999" stop-color="#4168c9" stop-opacity="0" />
-            </radialGradient>
-            <path fill="url(#yOrnnhliCrdS2gy~4tD8mb)"
-                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
-            <path fill="#fff"
-                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z" />
-            <circle cx="31.5" cy="16.5" r="1.5" fill="#fff" />
-            <path fill="#fff"
-                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z" />
-        </svg>
-    </a>
-    
 
-    
-    <a href="https://facebook.com" aria-label="facebook">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-            <path fill="#3F51B5"
-                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z" />
-            <path fill="#FFF"
-                d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z" />
-        </svg>
-    </a>
     
 </div><div class="container py-4">
     <div class="row justify-content-center">
@@ -589,7 +515,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2024  Todos los derechos reservados
+            &copy; 2026  Todos los derechos reservados
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
@@ -641,6 +567,8 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
 
 
 
+
+<script src="/js/contact.js"></script>
 
 
 

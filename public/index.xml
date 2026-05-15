@@ -6,30 +6,24 @@
     <description>Recent content on Cristian Rivera G.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Dec 2023 23:29:21 +0530</lastBuildDate><atom:link href="https://cristianriverag.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Mar 2026 10:00:00 +0530</lastBuildDate><atom:link href="https://cristianriverag.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mi Post de Prueba</title>
-      <link>https://cristianriverag.netlify.app/blogs/mipost/</link>
-      <pubDate>Thu, 14 Dec 2023 23:29:21 +0530</pubDate>
+      <title>Web Scraping con Python y Scrapy</title>
+      <link>https://cristianriverag.netlify.app/blogs/webscraping-scrapy/</link>
+      <pubDate>Wed, 25 Mar 2026 10:00:00 +0530</pubDate>
       
-      <guid>https://cristianriverag.netlify.app/blogs/mipost/</guid>
-      <description>Definición Esto es un párrafo para probar cómo se ve en la publicación y dentro de el blog.
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-Blockquotes The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element, and optionally with in-line changes such as annotations and abbreviations.</description>
+      <guid>https://cristianriverag.netlify.app/blogs/webscraping-scrapy/</guid>
+      <description>¿Qué es el Web Scraping? Vivimos en un mundo donde una cantidad enorme de información está disponible en internet: precios de productos, noticias, datos climáticos, ofertas de empleo, resultados deportivos y mucho más. Sin embargo, gran parte de esa información no está lista para ser analizada directamente; está dispersa en páginas web, presentada visualmente para los usuarios, pero no estructurada para su procesamiento automático.
+El web scraping es el proceso de extracción automatizada de datos desde sitios web.</description>
     </item>
     
     <item>
-      <title>Render Math With Mathjax</title>
-      <link>https://cristianriverag.netlify.app/blogs/math/</link>
-      <pubDate>Fri, 09 Dec 2022 19:53:33 +0530</pubDate>
+      <title>Educación como Impulsor de Equidad Social</title>
+      <link>https://cristianriverag.netlify.app/blogs/mipost/</link>
+      <pubDate>Sat, 14 Jun 2025 23:29:21 +0530</pubDate>
       
-      <guid>https://cristianriverag.netlify.app/blogs/math/</guid>
-      <description>Mathjax Math equations can be rendered using Mathjax syntax with AMS symbol support.
-Optionally enable this on a per-page basis by adding mathjax: true to your frontmatter.
-Then, use $$ ... $$ on a line by itself to render a block equation:
-$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &amp;lt; \text{negligible} $$
-The raw version is:
-$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &amp;lt; \text{negligible} $$ Write in-line equations with \\( .</description>
+      <guid>https://cristianriverag.netlify.app/blogs/mipost/</guid>
+      <description>Introducción El presente documento es un ejercicio académico de escritura argumentativa cuyo propósito es desarrollar y sustentar la idea de que la Educación 4.0 puede convertirse en un motor clave para la equidad social. A través del análisis crítico de fuentes académicas, se busca evidenciar cómo la integración de tecnologías emergentes en los procesos educativos, si se implementa de manera inclusiva y contextualizada, puede contribuir a reducir brechas históricas y garantizar oportunidades de aprendizaje equitativas para todos.</description>
     </item>
     
     <item>
@@ -42,58 +36,14 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow P_{2}} [A(x) = 1] | &
     </item>
     
     <item>
-      <title>Markdown Syntax</title>
-      <link>https://cristianriverag.netlify.app/blogs/markdown-syntax/</link>
-      <pubDate>Sat, 03 Apr 2021 23:29:21 +0530</pubDate>
-      
-      <guid>https://cristianriverag.netlify.app/blogs/markdown-syntax/</guid>
-      <description>Paragraph Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga.</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://cristianriverag.netlify.app/blogs/emoji-support/</link>
-      <pubDate>Sat, 03 Apr 2021 22:53:58 +0530</pubDate>
-      
-      <guid>https://cristianriverag.netlify.app/blogs/emoji-support/</guid>
-      <description>Emoji can be enabled in a Hugo project in a number of ways. :zap:
-Emoji Support The emojify function can be called directly in templates or Inline Shortcodes.
-To enable emoji globally, set enableEmoji to true in your site’s configuration and then you can type emoji shorthand codes directly in content files; e.g.
-The Emoji cheat sheet is a useful reference for emoji shorthand codes.
-N.B. The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform.</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://cristianriverag.netlify.app/blogs/placeholder-text/</link>
-      <pubDate>Sat, 03 Apr 2021 22:41:10 +0530</pubDate>
-      
-      <guid>https://cristianriverag.netlify.app/blogs/placeholder-text/</guid>
-      <description>Lorem est tota propiore conpellat pectoribus de pectora summo.
-Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.
-Exierant elisi ambit vivere dedere Duce pollice Eris modo Spargitque ferrea quos palude Rursus nulli murmur; hastile inridet ut ab gravi sententia!</description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://cristianriverag.netlify.app/blogs/rich-content/</link>
-      <pubDate>Sat, 03 Apr 2021 19:53:33 +0530</pubDate>
-      
-      <guid>https://cristianriverag.netlify.app/blogs/rich-content/</guid>
-      <description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-Gist Simple Shortcode {{&amp;lt; gist spf13 7896402 &amp;#34;img.html&amp;#34; &amp;gt;}} Twitter Simple Shortcode {{&amp;lt; tweet GoHugoIO 1315233626070503424 &amp;gt;}} Profile is a customizable single-page portfolio theme for Hugo featuring a contact form and blog. Made by @gurusabarishh.https://t.co/KwYcwfdy16
-&amp;mdash; GoHugo.io (@GoHugoIO) October 11, 2020 Vimeo Simple Shortcode {{&amp;lt; vimeo 146022717 &amp;gt;}} Youtube Simple Shortcode {{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}} Theme Custom Shortcodes These shortcodes are not Hugo built-ins, but are provided by the theme.</description>
-    </item>
-    
-    <item>
       <title>Hello R Markdown</title>
       <link>https://cristianriverag.netlify.app/post/2020-12-01-r-rmarkdown/</link>
       <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
       
       <guid>https://cristianriverag.netlify.app/post/2020-12-01-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
   </channel>

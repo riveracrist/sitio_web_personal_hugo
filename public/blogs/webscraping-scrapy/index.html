@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/euler-diagram.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:title" content="Web Scraping con Python y Scrapy" />
+<meta property="og:description" content="Una introducción práctica al web scraping con Python y el framework Scrapy" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cristianriverag.netlify.app/blogs/webscraping-scrapy/" /><meta property="article:section" content="blogs" />
+<meta property="article:published_time" content="2026-03-25T10:00:00+05:30" />
+<meta property="article:modified_time" content="2026-03-25T10:00:00+05:30" /><meta property="og:site_name" content="Cristian R." />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Web Scraping con Python y Scrapy"/>
+<meta name="twitter:description" content="Una introducción práctica al web scraping con Python y el framework Scrapy"/>
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px var(--background-color);
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+<meta name="description" content="Una introducción práctica al web scraping con Python y el framework Scrapy">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+  <title>
+Web Scraping con Python y Scrapy | Cristian Rivera G.
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  false ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;        
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/euler-diagram.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Cristian Rivera
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Buscar en blog'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Buscar en blog' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            Conóceme
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Formación complementaria
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Educación
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Proyectos Personales
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contáctame
+                        </a>
+                    </li>
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Web Scraping con Python y Scrapy</h1>
+            <div class="text-center">
+              Cristian Rivera 
+              <small>|</small>
+              Mar 25, 2026
+
+              
+              <span id="readingTime">
+                mins. de lectura
+              </span>
+              
+            </div>
+          </div>
+          
+          <div class="featured-image">
+            <img class="img-fluid mx-auto d-block" src="/images/webscraping.png" alt="Web Scraping con Python y Scrapy">
+          </div>
+          
+          <article class="page-content  p-2">
+          <h2 id="qué-es-el-web-scraping">¿Qué es el Web Scraping?</h2>
+<p>Vivimos en un mundo donde una cantidad enorme de información está disponible en internet: precios
+de productos, noticias, datos climáticos, ofertas de empleo, resultados deportivos y mucho más. Sin
+embargo, gran parte de esa información no está lista para ser analizada directamente; está dispersa
+en páginas web, presentada visualmente para los usuarios, pero no estructurada para su procesamiento
+automático.</p>
+<p>El <strong>web scraping</strong> es el proceso de extracción automatizada de datos desde sitios web. En términos
+sencillos, consiste en programar un sistema que visite páginas web, las lea tal como lo haría un
+navegador, y extraiga de ellas la información que nos interesa, guardándola en un formato que podamos
+usar: una hoja de cálculo, una base de datos, un archivo de texto, entre otros.</p>
+<p>Esta técnica tiene aplicaciones en múltiples áreas: investigación académica, periodismo de datos,
+inteligencia de mercado, monitoreo de precios, análisis de redes sociales y construcción de conjuntos
+de datos para entrenar modelos de machine learning, por mencionar algunas.</p>
+<p>Es importante señalar que el web scraping debe practicarse de manera <strong>ética y responsable</strong>. Antes
+de extraer datos de un sitio web, conviene revisar sus términos de uso y su archivo <code>robots.txt</code>, que
+es un documento que los sitios publican para indicar qué partes pueden ser rastreadas
+automáticamente y cuáles no. No todos los sitios permiten esta práctica, y en algunos contextos puede
+tener implicaciones legales.</p>
+<hr>
+<h2 id="python-y-el-web-scraping">Python y el Web Scraping</h2>
+<p>Python se ha convertido en el lenguaje de referencia para el web scraping, y no es casualidad. Su
+sintaxis clara y legible, combinada con un ecosistema robusto de bibliotecas especializadas, lo hacen
+ideal tanto para principiantes como para desarrolladores con experiencia.</p>
+<p>Entre las herramientas más utilizadas del ecosistema Python para esta tarea se encuentran:</p>
+<ul>
+<li><strong>Requests</strong>: permite realizar peticiones HTTP para obtener el contenido de una página web.</li>
+<li><strong>BeautifulSoup</strong>: facilita el análisis y navegación del HTML de una página para extraer datos específicos.</li>
+<li><strong>Selenium</strong>: útil cuando se necesita interactuar con sitios dinámicos que cargan contenido mediante JavaScript.</li>
+<li><strong>Scrapy</strong>: un framework completo y robusto para construir proyectos de scraping a mayor escala.</li>
+</ul>
+<p>Para tareas simples, una combinación de <code>Requests</code> y <code>BeautifulSoup</code> puede ser suficiente. Sin
+embargo, cuando el proyecto crece en complejidad —múltiples páginas, manejo de errores, almacenamiento
+de datos, respeto de tiempos de espera— un framework como <strong>Scrapy</strong> ofrece una estructura mucho
+más sólida y eficiente.</p>
+<hr>
+<h2 id="scrapy-un-framework-para-web-scraping-profesional">Scrapy: Un Framework para Web Scraping Profesional</h2>
+<p><strong>Scrapy</strong> es un framework de código abierto escrito en Python, diseñado específicamente para
+extraer datos de sitios web de manera estructurada, rápida y escalable. Fue creado originalmente por
+Scrapinghub (hoy Zyte) y es mantenido activamente por su comunidad. A diferencia de soluciones más
+simples, Scrapy ofrece una arquitectura completa que gestiona desde las peticiones HTTP hasta el
+almacenamiento de los datos extraídos.</p>
+<p>Algunas de sus características más destacadas son:</p>
+<ul>
+<li><strong>Velocidad</strong>: realiza múltiples peticiones de forma asíncrona, lo que acelera significativamente el proceso.</li>
+<li><strong>Estructura clara</strong>: organiza el proyecto en componentes bien definidos (spiders, pipelines, middlewares).</li>
+<li><strong>Exportación de datos</strong>: permite guardar los resultados en formatos como JSON, CSV o XML con un simple comando.</li>
+<li><strong>Extensibilidad</strong>: se puede personalizar y extender para adaptarse a casi cualquier necesidad.</li>
+</ul>
+<blockquote>
+<p>Para conocer más sobre Scrapy, su documentación oficial es un excelente punto de partida:
+<a href="https://docs.scrapy.org/en/latest/">docs.scrapy.org</a></p>
+</blockquote>
+<hr>
+<h2 id="instalación-y-configuración">Instalación y Configuración</h2>
+<p>Para comenzar a usar Scrapy, es necesario tenerlo instalado en el entorno de Python. Se recomienda
+hacerlo dentro de un entorno virtual para mantener las dependencias organizadas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Crear un entorno virtual</span>
+</span></span><span style="display:flex;"><span>python -m venv entorno_scraping
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Activar el entorno virtual (Windows)</span>
+</span></span><span style="display:flex;"><span>entorno_scraping<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Activar el entorno virtual (Mac/Linux)</span>
+</span></span><span style="display:flex;"><span>source entorno_scraping/bin/activate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Instalar Scrapy</span>
+</span></span><span style="display:flex;"><span>pip install scrapy
+</span></span></code></pre></div><p>Una vez instalado, se puede crear un nuevo proyecto con el siguiente comando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>scrapy startproject mi_proyecto
+</span></span></code></pre></div><p>Esto genera una estructura de carpetas como la siguiente:</p>
+<pre tabindex="0"><code>mi_proyecto/
+├── scrapy.cfg
+└── mi_proyecto/
+    ├── __init__.py
+    ├── items.py
+    ├── middlewares.py
+    ├── pipelines.py
+    ├── settings.py
+    └── spiders/
+        └── __init__.py
+</code></pre><p>Cada archivo cumple un rol específico dentro del framework, aunque para comenzar, el directorio
+más importante es <code>spiders/</code>, que es donde se definen los robots de extracción.</p>
+<hr>
+<h2 id="el-componente-central-los-spiders">El Componente Central: Los Spiders</h2>
+<p>En Scrapy, un <strong>spider</strong> es una clase de Python que define cómo se debe navegar un sitio web y
+qué información se debe extraer de él. El nombre hace referencia a las arañas que tejen y recorren
+una telaraña, en este caso, la web.</p>
+<p>A continuación se muestra un ejemplo básico de un spider que extrae los títulos y enlaces de las
+noticias publicadas en <code>books.toscrape.com</code>, un sitio creado específicamente para practicar
+web scraping:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> scrapy
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LibrosSpider</span>(scrapy<span style="color:#f92672">.</span>Spider):
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;libros&#34;</span>
+</span></span><span style="display:flex;"><span>    start_urls <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;https://books.toscrape.com/&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parse</span>(self, response):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Extraer el título y precio de cada libro en la página</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> libro <span style="color:#f92672">in</span> response<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#34;article.product_pod&#34;</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">yield</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;titulo&#34;</span>: libro<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#34;h3 a::attr(title)&#34;</span>)<span style="color:#f92672">.</span>get(),
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;precio&#34;</span>: libro<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#34;p.price_color::text&#34;</span>)<span style="color:#f92672">.</span>get(),
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Seguir a la página siguiente si existe</span>
+</span></span><span style="display:flex;"><span>        siguiente_pagina <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#34;li.next a::attr(href)&#34;</span>)<span style="color:#f92672">.</span>get()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> siguiente_pagina:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">yield</span> response<span style="color:#f92672">.</span>follow(siguiente_pagina, self<span style="color:#f92672">.</span>parse)
+</span></span></code></pre></div><p>Para ejecutar este spider y guardar los resultados en un archivo CSV:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>scrapy crawl libros -o libros.csv
+</span></span></code></pre></div><p>Este ejemplo ilustra tres aspectos clave del funcionamiento de Scrapy: la <strong>petición inicial</strong>
+(<code>start_urls</code>), la <strong>extracción de datos</strong> mediante selectores CSS, y la <strong>paginación automática</strong>,
+que permite recorrer múltiples páginas de manera encadenada.</p>
+<hr>
+<h2 id="selectores-css-y-xpath">Selectores: CSS y XPath</h2>
+<p>Una de las habilidades fundamentales en web scraping es saber cómo identificar y extraer los
+elementos que nos interesan dentro del HTML de una página. Scrapy ofrece dos sistemas de
+selección:</p>
+<h3 id="selectores-css">Selectores CSS</h3>
+<p>Son la opción más intuitiva si se tiene alguna experiencia con diseño web. Funcionan de manera
+similar a como se aplican estilos en una hoja de estilos CSS:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Seleccionar el texto de todos los encabezados h2</span>
+</span></span><span style="display:flex;"><span>response<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#34;h2::text&#34;</span>)<span style="color:#f92672">.</span>getall()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Seleccionar el atributo href de todos los enlaces</span>
+</span></span><span style="display:flex;"><span>response<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#34;a::attr(href)&#34;</span>)<span style="color:#f92672">.</span>getall()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Seleccionar el primer elemento con clase &#39;titulo&#39;</span>
+</span></span><span style="display:flex;"><span>response<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#34;.titulo::text&#34;</span>)<span style="color:#f92672">.</span>get()
+</span></span></code></pre></div><h3 id="selectores-xpath">Selectores XPath</h3>
+<p>XPath es un lenguaje más expresivo y potente para navegar documentos HTML y XML. Aunque
+su sintaxis es menos intuitiva al principio, permite construir consultas más precisas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Seleccionar el texto de todos los párrafos</span>
+</span></span><span style="display:flex;"><span>response<span style="color:#f92672">.</span>xpath(<span style="color:#e6db74">&#34;//p/text()&#34;</span>)<span style="color:#f92672">.</span>getall()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Seleccionar el href de enlaces que contengan la palabra &#39;contacto&#39;</span>
+</span></span><span style="display:flex;"><span>response<span style="color:#f92672">.</span>xpath(<span style="color:#e6db74">&#34;//a[contains(@href, &#39;contacto&#39;)]/@href&#34;</span>)<span style="color:#f92672">.</span>getall()
+</span></span></code></pre></div><p>Ambos sistemas son válidos y pueden combinarse en un mismo spider. La elección depende
+principalmente de la preferencia del desarrollador y de la complejidad de la estructura HTML
+que se esté analizando.</p>
+<blockquote>
+<p>Para explorar los selectores en profundidad:
+<a href="https://docs.scrapy.org/en/latest/topics/selectors.html">Scrapy Selectors — Documentación oficial</a></p>
+</blockquote>
+<hr>
+<h2 id="items-y-pipelines-estructurando-y-procesando-los-datos">Items y Pipelines: Estructurando y Procesando los Datos</h2>
+<p>Scrapy ofrece dos mecanismos adicionales que resultan especialmente útiles en proyectos de mayor
+envergadura: los <strong>Items</strong> y los <strong>Pipelines</strong>.</p>
+<h3 id="items">Items</h3>
+<p>Los Items permiten definir una estructura clara para los datos que se van a extraer, similar a
+como se definiría un esquema en una base de datos:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># items.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> scrapy
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LibroItem</span>(scrapy<span style="color:#f92672">.</span>Item):
+</span></span><span style="display:flex;"><span>    titulo <span style="color:#f92672">=</span> scrapy<span style="color:#f92672">.</span>Field()
+</span></span><span style="display:flex;"><span>    precio <span style="color:#f92672">=</span> scrapy<span style="color:#f92672">.</span>Field()
+</span></span><span style="display:flex;"><span>    disponibilidad <span style="color:#f92672">=</span> scrapy<span style="color:#f92672">.</span>Field()
+</span></span><span style="display:flex;"><span>    calificacion <span style="color:#f92672">=</span> scrapy<span style="color:#f92672">.</span>Field()
+</span></span></code></pre></div><p>Usar Items en lugar de diccionarios simples hace que el código sea más ordenado y facilita
+la detección de errores.</p>
+<h3 id="pipelines">Pipelines</h3>
+<p>Los Pipelines son el lugar donde se procesan los datos una vez extraídos. Se pueden usar para
+limpiar la información, validarla, transformarla o almacenarla en una base de datos:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># pipelines.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LimpiezaPrecioPipeline</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process_item</span>(self, item, spider):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Eliminar el símbolo de moneda y convertir a número</span>
+</span></span><span style="display:flex;"><span>        precio_texto <span style="color:#f92672">=</span> item<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;precio&#34;</span>, <span style="color:#e6db74">&#34;£0.00&#34;</span>)
+</span></span><span style="display:flex;"><span>        item[<span style="color:#e6db74">&#34;precio&#34;</span>] <span style="color:#f92672">=</span> float(precio_texto<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;£&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)<span style="color:#f92672">.</span>strip())
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> item
+</span></span></code></pre></div><p>Los pipelines se activan en el archivo <code>settings.py</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ITEM_PIPELINES <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;mi_proyecto.pipelines.LimpiezaPrecioPipeline&#34;</span>: <span style="color:#ae81ff">300</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>El número (300) indica la prioridad de ejecución; valores menores se ejecutan primero.</p>
+<hr>
+<h2 id="buenas-prácticas-y-consideraciones-éticas">Buenas Prácticas y Consideraciones Éticas</h2>
+<p>Hacer web scraping de forma responsable implica más que saber escribir el código. Algunas
+consideraciones importantes son:</p>
+<p><strong>Respetar el archivo <code>robots.txt</code></strong>: este archivo, presente en la mayoría de los sitios web
+bajo la ruta <code>/robots.txt</code>, indica qué secciones pueden ser rastreadas automáticamente.
+Scrapy lo respeta por defecto cuando la configuración <code>ROBOTSTXT_OBEY = True</code> está activa
+en <code>settings.py</code>.</p>
+<p><strong>Establecer retardos entre peticiones</strong>: hacer demasiadas solicitudes en muy poco tiempo
+puede sobrecargar el servidor del sitio web. Scrapy permite configurar un tiempo de espera
+entre peticiones:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># settings.py</span>
+</span></span><span style="display:flex;"><span>DOWNLOAD_DELAY <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>  <span style="color:#75715e"># Esperar 2 segundos entre cada petición</span>
+</span></span></code></pre></div><p><strong>Identificarse correctamente</strong>: algunos sitios web verifican el encabezado <code>User-Agent</code>
+para saber qué tipo de cliente está haciendo la solicitud. Es una buena práctica identificarse
+de forma honesta.</p>
+<p><strong>Verificar los términos de uso</strong>: algunos sitios prohíben explícitamente el scraping en sus
+condiciones de servicio. Es fundamental leerlas antes de proceder.</p>
+<hr>
+<h2 id="recursos-para-profundizar">Recursos para Profundizar</h2>
+<p>Si este tema ha despertado tu interés, los siguientes recursos son un excelente punto de partida
+para continuar aprendiendo:</p>
+<ul>
+<li>
+<p>📘 <strong>Documentación oficial de Scrapy</strong>: <a href="https://docs.scrapy.org/en/latest/">docs.scrapy.org</a>
+La referencia más completa y actualizada sobre el framework.</p>
+</li>
+<li>
+<p>📗 <strong>Web Scraping with Python</strong> — Ryan Mitchell (O&rsquo;Reilly, 2018):
+Un libro muy accesible que cubre desde los fundamentos hasta técnicas avanzadas, incluyendo
+el manejo de JavaScript y el uso de APIs.</p>
+</li>
+<li>
+<p>📙 <strong>books.toscrape.com</strong>: <a href="https://books.toscrape.com/">books.toscrape.com</a>
+Un sitio creado específicamente para practicar web scraping sin preocupaciones éticas o legales.</p>
+</li>
+<li>
+<p>📺 <strong>Scrapy Tutorial en YouTube — freeCodeCamp</strong>:
+<a href="https://www.youtube.com/@freecodecamp">freeCodeCamp.org YouTube</a>
+Tutoriales en video gratuitos con proyectos prácticos.</p>
+</li>
+<li>
+<p>📄 <strong>The Ethics of Web Scraping</strong> — Towards Data Science:
+Un artículo que reflexiona sobre las implicaciones éticas y legales de esta práctica.
+<a href="https://towardsdatascience.com/">towardsdatascience.com</a></p>
+</li>
+</ul>
+<hr>
+<h2 id="conclusión">Conclusión</h2>
+<p>El web scraping es una habilidad cada vez más relevante en un mundo donde los datos son un
+recurso fundamental. Python, con su ecosistema de herramientas, ofrece las condiciones ideales
+para iniciarse en esta práctica, y Scrapy eleva esas posibilidades a un nivel profesional, permitiendo
+construir proyectos robustos, escalables y bien organizados.</p>
+<p>Como cualquier herramienta, su valor no reside solo en la capacidad técnica de quien la usa, sino
+también en la responsabilidad con la que se aplica. Conocer sus posibilidades es el primer paso;
+usarla con criterio ético y propósito claro es lo que distingue a un buen desarrollador de datos.</p>
+<p>Si estás comenzando, el mejor consejo es practicar con sitios diseñados para ello, como
+<code>books.toscrape.com</code>, antes de avanzar hacia proyectos más complejos. La curva de aprendizaje
+de Scrapy puede parecer pronunciada al principio, pero la estructura que ofrece vale ampliamente
+el esfuerzo.</p>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Tabla de Contenido
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-es-el-web-scraping">¿Qué es el Web Scraping?</a></li>
+    <li><a href="#python-y-el-web-scraping">Python y el Web Scraping</a></li>
+    <li><a href="#scrapy-un-framework-para-web-scraping-profesional">Scrapy: Un Framework para Web Scraping Profesional</a></li>
+    <li><a href="#instalación-y-configuración">Instalación y Configuración</a></li>
+    <li><a href="#el-componente-central-los-spiders">El Componente Central: Los Spiders</a></li>
+    <li><a href="#selectores-css-y-xpath">Selectores: CSS y XPath</a>
+      <ul>
+        <li><a href="#selectores-css">Selectores CSS</a></li>
+        <li><a href="#selectores-xpath">Selectores XPath</a></li>
+      </ul>
+    </li>
+    <li><a href="#items-y-pipelines-estructurando-y-procesando-los-datos">Items y Pipelines: Estructurando y Procesando los Datos</a>
+      <ul>
+        <li><a href="#items">Items</a></li>
+        <li><a href="#pipelines">Pipelines</a></li>
+      </ul>
+    </li>
+    <li><a href="#buenas-prácticas-y-consideraciones-éticas">Buenas Prácticas y Consideraciones Éticas</a></li>
+    <li><a href="#recursos-para-profundizar">Recursos para Profundizar</a></li>
+    <li><a href="#conclusión">Conclusión</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/python" target="_blank">Python</a></li>
+              
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/web-scraping" target="_blank">Web Scraping</a></li>
+              
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/scrapy" target="_blank">Scrapy</a></li>
+              
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/datos" target="_blank">Datos</a></li>
+              
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/automatizaci%C3%B3n" target="_blank">Automatización</a></li>
+              
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/programaci%C3%B3n" target="_blank">Programación</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=Web%20Scraping%20con%20Python%20y%20Scrapy&url=https%3a%2f%2fcristianriverag.netlify.app%2fblogs%2fwebscraping-scrapy%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Web%20Scraping%20con%20Python%20y%20Scrapy: https%3a%2f%2fcristianriverag.netlify.app%2fblogs%2fwebscraping-scrapy%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=Web%20Scraping%20con%20Python%20y%20Scrapy&amp;body=Visita%20mi%20p%c3%a1gina https%3a%2f%2fcristianriverag.netlify.app%2fblogs%2fwebscraping-scrapy%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+ 
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Últimas Publicaciones
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/webscraping-scrapy/">
+                        <img src="/images/webscraping.png" class="card-img-top" alt="Web Scraping con Python y Scrapy">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/webscraping-scrapy/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Web Scraping con Python y Scrapy">Web Scraping con Python y …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>¿Qué es el Web Scraping? Vivimos en un mundo donde una cantidad enorme de información está disponible en internet: precios de productos, noticias, datos climáticos, ofertas de empleo, resultados deportivos y mucho más. Sin embargo, gran parte de esa información no está lista para ser analizada …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Mar 25, 2026</span>
+                    <a href="/blogs/webscraping-scrapy/" class="float-end btn btn-outline-info btn-sm">Leer</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/mipost/">
+                        <img src="/images/eduacion.png" class="card-img-top" alt="Educación como Impulsor de Equidad Social">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/mipost/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Educación como Impulsor de Equidad Social">Educación como Impulsor …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Introducción El presente documento es un ejercicio académico de escritura argumentativa cuyo propósito es desarrollar y sustentar la idea de que la Educación 4.0 puede convertirse en un motor clave para la equidad social. A través del análisis crítico de fuentes académicas, se busca evidenciar cómo …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Jun 14, 2025</span>
+                    <a href="/blogs/mipost/" class="float-end btn btn-outline-info btn-sm">Leer</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/riveracrist" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <a href="https://x.com/CrGoo7" aria-label="twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+            <path fill="#03a9f4"
+                d="M42,37c0,2.762-2.239,5-5,5H11c-2.762,0-5-2.238-5-5V11c0-2.762,2.238-5,5-5h26c2.761,0,5,2.238,5,5 V37z" />
+            <path fill="#fff"
+                d="M36,17.12c-0.882,0.391-1.999,0.758-3,0.88c1.018-0.604,2.633-1.862,3-3 c-0.951,0.559-2.671,1.156-3.793,1.372C31.311,15.422,30.033,15,28.617,15C25.897,15,24,17.305,24,20v2c-4,0-7.9-3.047-10.327-6 c-0.427,0.721-0.667,1.565-0.667,2.457c0,1.819,1.671,3.665,2.994,4.543c-0.807-0.025-2.335-0.641-3-1c0,0.016,0,0.036,0,0.057 c0,2.367,1.661,3.974,3.912,4.422C16.501,26.592,16,27,14.072,27c0.626,1.935,3.773,2.958,5.928,3c-1.686,1.307-4.692,2-7,2 c-0.399,0-0.615,0.022-1-0.023C14.178,33.357,17.22,34,20,34c9.057,0,14-6.918,14-13.37c0-0.212-0.007-0.922-0.018-1.13 C34.95,18.818,35.342,18.104,36,17.12" />
+        </svg>
+    </a>
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <div class="pb-2">
+                <a href="https://cristianriverag.netlify.app/" title="Cristian Rivera G.">
+                    <img alt="Footer logo" src="/euler-diagram.png"
+                        height="40px" width="40px">
+                </a>
+            </div>
+            &copy; 2026  Todos los derechos reservados
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+<script src="/js/contact.js"></script>
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

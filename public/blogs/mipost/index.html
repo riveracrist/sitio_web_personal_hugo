@@ -28,16 +28,16 @@
 
 
 
-<meta property="og:title" content="Mi Post de Prueba" />
-<meta property="og:description" content="Un breve post de prueba" />
+<meta property="og:title" content="Educación como Impulsor de Equidad Social" />
+<meta property="og:description" content="Eduación 4.0" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cristianriverag.netlify.app/blogs/mipost/" /><meta property="article:section" content="blogs" />
-<meta property="article:published_time" content="2023-12-14T23:29:21+05:30" />
-<meta property="article:modified_time" content="2023-12-14T23:29:21+05:30" /><meta property="og:site_name" content="Cristian R." />
+<meta property="article:published_time" content="2025-06-14T23:29:21+05:30" />
+<meta property="article:modified_time" content="2025-06-14T23:29:21+05:30" /><meta property="og:site_name" content="Cristian R." />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Mi Post de Prueba"/>
-<meta name="twitter:description" content="Un breve post de prueba"/>
+<meta name="twitter:title" content="Educación como Impulsor de Equidad Social"/>
+<meta name="twitter:description" content="Eduación 4.0"/>
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -101,14 +101,14 @@
     }
 </style>
 
-<meta name="description" content="Un breve post de prueba">
+<meta name="description" content="Eduación 4.0">
 <link rel="stylesheet" href="/css/single.css">
 
 
 <script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
   <title>
-Mi Post de Prueba | Cristian Rivera G.
+Educación como Impulsor de Equidad Social | Cristian Rivera G.
 
   </title>
 </head>
@@ -144,7 +144,7 @@ Mi Post de Prueba | Cristian Rivera G.
         let profileHeaderElem = document.getElementById("profileHeader");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
-        let showNavBarOnScrollUp =  true ;
+        let showNavBarOnScrollUp =  false ;
         let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
         if (showNavBar) {
             profileHeaderElem.classList.add("showHeaderOnTop");
@@ -169,13 +169,15 @@ Mi Post de Prueba | Cristian Rivera G.
             
             <a class="navbar-brand primary-font text-wrap" href="/">
                 
-                Cristian Rivera González
+                <img src="/euler-diagram.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Cristian Rivera
                 
             </a>
 
             
                 <div>
-                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Buscar'
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Buscar en blog'
                         aria-label="Search" oninput="searchOnChange(event)">
                 </div>
             
@@ -194,7 +196,7 @@ Mi Post de Prueba | Cristian Rivera G.
                     
                         <li class="nav-item navbar-text d-block d-md-none">
                             <div class="nav-link">
-                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Buscar' aria-label="Search" oninput="searchOnChange(event)">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Buscar en blog' aria-label="Search" oninput="searchOnChange(event)">
                             </div>
                         </li>
                     
@@ -207,6 +209,13 @@ Mi Post de Prueba | Cristian Rivera G.
                     </li>
                     
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Formación complementaria
+                        </a>
+                    </li>
                     
 
                     
@@ -222,13 +231,20 @@ Mi Post de Prueba | Cristian Rivera G.
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#projects"
                             aria-label="projects">
-                            Proyectos
+                            Proyectos Personales
                         </a>
                     </li>
                     
 
                     
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contáctame
+                        </a>
+                    </li>
                     
 
                     
@@ -240,29 +256,6 @@ Mi Post de Prueba | Cristian Rivera G.
                             
                             Blog
                         </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Example dropdown menu">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
-                            
-                            <a class="dropdown-item text-center nav-link" href="/"
-                                title="example dropdown 1">
-                                example 1
-                            </a>
-                            
-                            <a class="dropdown-item text-center nav-link" href="/"
-                                title="example dropdown 2">
-                                example 2
-                            </a>
-                            
-                        </div>
                     </li>
                     
                     
@@ -304,11 +297,11 @@ Mi Post de Prueba | Cristian Rivera G.
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">Mi Post de Prueba</h1>
+            <h1 class="text-center mb-4">Educación como Impulsor de Equidad Social</h1>
             <div class="text-center">
-              CrRiveraGo 
+              Cristian Rivera 
               <small>|</small>
-              Dec 14, 2023
+              Jun 14, 2025
 
               
               <span id="readingTime">
@@ -319,143 +312,244 @@ Mi Post de Prueba | Cristian Rivera G.
           </div>
           
           <div class="featured-image">
-            <img class="img-fluid mx-auto d-block" src="/images/look.jpg" alt="Mi Post de Prueba">
+            <img class="img-fluid mx-auto d-block" src="/images/eduacion.png" alt="Educación como Impulsor de Equidad Social">
           </div>
           
           <article class="page-content  p-2">
-          <h2 id="definición">Definición</h2>
-<p>Esto es un párrafo para probas cómo se ve en la publicación y dentro de el blog.</p>
-<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
-<h2 id="blockquotes">Blockquotes</h2>
-<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
-<h3 id="blockquote-without-attribution">Blockquote without attribution</h3>
-<blockquote>
-<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
-</blockquote>
-<h3 id="blockquote-with-attribution">Blockquote with attribution</h3>
-<blockquote>
-<p>Don&rsquo;t communicate by sharing memory, share memory by communicating.</p>
-— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
-</blockquote>
-<h2 id="tables">Tables</h2>
-<p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bob</td>
-<td>27</td>
-</tr>
-<tr>
-<td>Alice</td>
-<td>23</td>
-</tr>
-</tbody>
-</table>
-<h3 id="inline-markdown-within-tables">Inline Markdown within tables</h3>
-<table>
-<thead>
-<tr>
-<th>Inline   </th>
-<th>Markdown   </th>
-<th>In   </th>
-<th>Table</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>italics</em></td>
-<td><strong>bold</strong></td>
-<td><del>strikethrough</del>   </td>
-<td><code>code</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="code-blocks">Code Blocks</h2>
-<h3 id="code-block-with-backticks">Code block with backticks</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span> /&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
-</span></span></code></pre></div><h3 id="code-block-indented-with-four-spaces">Code block indented with four spaces</h3>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;Test&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h3 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;</span></span></code></pre></div>
-<h2 id="list-types">List Types</h2>
-<h3 id="ordered-list">Ordered List</h3>
-<ol>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
-</ol>
-<h3 id="unordered-list">Unordered List</h3>
+          <h2 id="introducción">Introducción</h2>
+<p>El presente documento es un ejercicio académico de escritura argumentativa cuyo propósito es
+desarrollar y sustentar la idea de que la Educación 4.0 puede convertirse en un motor clave para la
+equidad social. A través del análisis crítico de fuentes académicas, se busca evidenciar cómo la
+integración de tecnologías emergentes en los procesos educativos, si se implementa de manera
+inclusiva y contextualizada, puede contribuir a reducir brechas históricas y garantizar oportunidades de
+aprendizaje equitativas para todos.</p>
+<p>Hoy en día, la educación recorre un camino de transformación, acelerado por la llegada de nuevas
+tecnologías, la digitalización de los sistemas de producción, la globalización y por los efectos súbitos
+de la pandemia. La disrupción permanente dentro de este panorama, ha vuelto cada vez más
+necesario formar profesionales que no solo tengan un sólido dominio técnico, sino que también estén
+preparados para adaptarse a los desafíos complejos, inciertos y en constante cambio que trae consigo
+la Cuarta Revolución Industrial.</p>
+<p>La Eduación 4.0 se manifiesta como un nuevo paradigma que trae a la práctica las tecnologías
+emergentes como la Inteligencia Artificial (IA), la realidad aumentada, los entornos virtuales de
+aprendizaje, el Big Data, para potenciar habilidades transversales que evolucionan constantemente.
+Esta transformación no se de la misma forma en todo el mundo. Por un lado, en Europa vemos
+iniciativas como el DigComp 2.2, que busca fortalecer las competencias digitales de los ciudadanos y
+promover un aprendizaje que dure toda la vida. Sin embargo, en América Latina la realidad es
+diferente, seguimos enfrentando obstáculos profundos tanto en infraestructura como culturalmente.
+Las diferencias son evidentes, mientras las ciudades avanzan con mayor acceso a tecnología, las
+zonas rurales se quedan atrás. Además, todavía vemos cómo las mujeres participan menos en
+carreras de ciencia, tecnología, áreas STEM, lo que nos habla de barreras que van más allá de lo
+económico y que limitan las oportunidades de desarrollo para todos.</p>
+<p>En este contexto, la Educación 4.0 aparece como una alternativa necesaria para responder a lo que la
+sociedad actual demanda. Se trata de una educación que se adapte a cada estudiante, que incluya a
+todos, que conecte diferentes áreas del conocimiento y que prepare a las personas en las
+competencias propias del siglo XXI, saber analizar información de manera crítica, trabajar en equipo
+con personas de diferentes culturas, manejar la tecnología de forma responsable, ser conscientes de
+los problemas sociales y comunicarse efectivamente en un mundo interconectado.
+Para lograr esto, necesitamos cambios concretos, actualizar lo que enseñamos, capacitar a los
+profesores en nuevas tecnologías, crear vínculos reales entre las universidades y las empresas,
+asegurar que todos tengan acceso a herramientas digitales y fomentar que el aprendizaje sea un
+ejercicio que esté en constante evolución. Al final, lo que buscamos es formar ingenieros que no solo
+dominen la técnica, sino que también sean ciudadanos conscientes de su responsabilidad global,
+creativos y capaces de tomar decisiones que consideren tanto los beneficios de la tecnología como
+sus consecuencias en la sociedad.</p>
+<p>No obstante, para que esta transformación educativa sea viable y sostenible, resulta indispensable la
+formulación e implementación de políticas públicas que impulsen la integración efectiva de las
+tecnologías de la información y la comunicación (TIC) en los procesos formativos. Estas políticas
+deben contemplar desde la provisión de herramientas tecnológicas hasta la capacitación continua de
+los docentes en el uso pedagógico de dichas tecnologías. Al mismo tiempo, es fundamental que se
+destinen recursos a mejorar la infraestructura física y tecnológica de las instituciones educativas,
+especialmente en aquellas regiones que históricamente han estado marginadas. Solo a través de un
+enfoque integral que combine innovación educativa con condiciones materiales adecuadas, será
+posible cerrar las brechas de acceso y garantizar que la Educación 4.0 llegue a todos los rincones de
+manera equitativa.</p>
+<p>Urge redefinir los sistemas educativos para responder a los retos de la cuarta revolución industrial,
+aunque desde ángulos complementarios; uno centrado en las competencias para el futuro del trabajo,
+y otro en la dimensión ética y cultural de la formación. Este diálogo entre innovación tecnológica y
+humanismo resulta crucial para avanzar hacia una Educación 4.0 integral.</p>
+<h2 id="desafíos-de-la-educación-40-en-contextos-desiguales">Desafíos de la Educación 4.0 en Contextos Desiguales</h2>
+<p>La implementación de la Educación 4.0 en América Latina enfrenta obstáculos significativos cuando se
+contrasta con sus promesas de innovación y transformación. Aunque se reconoce que “la Educación
+4.0 constituye una respuesta transformadora ante las exigencias de la sociedad actual” (Kumar, 2025),
+su despliegue en países como Colombia evidencia profundas limitaciones estructurales asociadas a la
+desigualdad social y territorial. Como advierte Chituc (2022), cinco desafíos técnicos afectan su
+implementación: la falta de infraestructura tecnológica, la interoperabilidad limitada, el bajo desarrollo
+de algoritmos de inteligencia artificial, la escasa seguridad de datos y, especialmente, la débil
+integración pedagógica. Esta situación se agrava en contextos rurales, donde lo más elemental aún no
+está resuelto. En el país, “el 76,7% de las sedes educativas rurales de primaria no contaban con
+servicio de internet y el 16,5% no tenían electricidad” (Cruz-Carbonell, Hernández-Arias &amp; Silva-Arias,
+2020), lo que revela una brecha material que impide cualquier avance real hacia una educación digital
+equitativa.</p>
+<p>Esta transformación propone un modelo centrado en el estudiante, con metodologías activas y
+entornos digitales que buscan fortalecer competencias como la creatividad, la flexibilidad y el
+pensamiento crítico. No obstante, para que esta propuesta se convierta en un verdadero impulsor de
+equidad social, es imprescindible superar limitaciones estructurales que afectan tanto el acceso, como
+la calidad de la educación. La implementación de Educación 4.0 no puede reducirse a la introducción
+de herramientas tecnológicas; requiere la articulación de actores clave como gobiernos, instituciones
+educativas, empresas y comunidades (Souza &amp; Debs, 2023).</p>
+<p>Un aspecto relevante señalado por Souza y Debs (2023) es que, aunque existen múltiples
+experiencias en la aplicación de tecnologías en programas de ingeniería, estas tienden a concentrarse
+en áreas industriales con mayor desarrollo, mientras que sectores como la ingeniería civil o la gestión
+de la construcción han mostrado una menor integración con los principios de Educación 4.0.</p>
+<p>Estas carencias técnicas y de infraestructura no son hechos aislados, sino manifestaciones de una
+desigualdad educativa estructural que reproduce exclusión. Como lo afirman Burgos-Ayala y
+Rodríguez Buitrago (2021), “la pobreza y desigualdad conllevan a escenarios de discriminación,
+inequidades, falta de oportunidades, poco reconocimiento y disminución de condiciones de posibilidad
+frente al acceso y permanencia en los procesos educativos”. Así, el potencial de la Educación 4.0 de
+brindar aprendizajes personalizados, éticos y colaborativos se ve radicalmente limitado por un entorno
+que no asegura siquiera las condiciones mínimas para su desarrollo. Además, esta desigualdad no
+solo afecta el acceso, sino también los resultados, por ejemplo, “en matemáticas, los estudiantes
+colombianos de 15 años están, en promedio, atrasados más de tres años (118 puntos) con respecto a
+sus pares de países miembros de la OCDE” (Ministerio de Educación Nacional/OCDE, 2016, citado en
+Burgos-Ayala &amp; Rodríguez Buitrago, 2021, p. 69).</p>
+<p>En consecuencia, la brecha digital se convierte en un reflejo y a la vez en un multiplicador de las
+desigualdades educativas existentes. Por tanto, resulta relevante que las políticas públicas no solo
+promuevan el uso de tecnologías emergentes, sino que también fortalezcan la infraestructura física,
+conectividad, formación docente y condiciones sociales que permitan su implementación real en
+territorios históricamente marginados, como lo afirman los autores Burgos-Ayala y Rodríguez Buitrago
+(2021).</p>
+<p>Esta compleja interacción entre innovación tecnológica y desigualdad social demanda una mirada
+crítica hacia las políticas educativas, especialmente en lo que respecta a su capacidad para fomentar
+inclusión real y justicia educativa en los diferentes territorios.</p>
+<h2 id="brechas-de-género-en-carreras-stem-science-technology-engineering-mathematics">Brechas de Género en Carreras STEM (Science, Technology, Engineering, Mathematics)</h2>
+<p>El término STEM es la forma abreviada de &ldquo;Science, Technology, Engineering, and Mathematics&rdquo;, que
+en español traduce Ciencia, Tecnología, Ingeniería y Matemáticas, CTIM (Cambridge University Press,
+2020). Se refiere a un enfoque educativo que integra estas cuatro disciplinas.</p>
+<p>Una de las desigualdades más persistentes del ámbito científico-tecnológico es la brecha de género en
+las disciplinas STEM. Este fenómeno no solo limita la participación de las mujeres en sectores
+estratégicos, sino que compromete la diversidad y la innovación necesarias para afrontar los desafíos
+de la Cuarta Revolución Industrial. De acuerdo con Botella et al. (2020), a pesar de los múltiples
+esfuerzos públicos y privados para fomentar vocaciones científicas entre niñas y mujeres jóvenes, los
+datos siguen siendo preocupantes, solo un 3 % de las estudiantes a nivel mundial se matriculan en
+estudios vinculados a las TIC, mientras que en el conjunto de las disciplinas STEM, la cifra apenas
+alcanza el 35 %. Este dato evidencia una realidad excluyente que afecta desde las decisiones
+educativas tempranas hasta la permanencia laboral, ya que incluso muchas mujeres que egresan de
+estas carreras optan por abandonar el sector en pocos años (Botella et al., 2020).</p>
+<p>Parra-Murillo et al. (2023) evidencian que las mujeres enfrentan violencias simbólicas y estructurales
+que las excluyen de las ingenierías desde temprana edad. Estas violencias, aunque muchas veces
+invisibilizadas, se traducen en baja representación femenina en carreras tecnológicas, deserción
+académica y dificultades para insertarse profesionalmente en entornos altamente masculinizados.</p>
+<p>Diversos estudios han demostrado que los equipos diversos, en términos de género, generan más
+innovación, creatividad y resolución efectiva de problemas (Botella et al., 2020). De ahí que no se trate
+solo de “incluir” a las mujeres, sino de reconfigurar todo el ecosistema educativo y profesional para que
+su participación sea plena, visible y sostenible. Las iniciativas como Girls4STEM o Stem Talent Girl,
+que combinan mentorías, visibilización de referentes y actividades prácticas desde edades tempranas,
+han demostrado ser estrategias efectivas para despertar el interés por estas áreas y fortalecer la
+autoeficacia de las niñas (Botella et al., 2020).</p>
+<p>Según (Juvera &amp; Hernández López, 2021) los estereotipos sociales impuestos durante la infancia
+influyen fuertemente en las decisiones vocacionales futuras de niñas y niños, particularmente alejando
+a las niñas de las ciencias. Por ello, la incorporación de modelos educativos STEAM en espacios de
+educación no formal puede generar oportunidades tempranas de apropiación tecnológica y fomentar el
+interés por estas áreas antes de que los sesgos se consoliden. La investigación propone, además, que
+estos modelos deben estar diseñados desde la perspectiva de género, para permitir que las niñas se
+reconozcan como protagonistas del mundo científico y tecnológico.</p>
+<h2 id="obsolescencia-de-habilidades-y-vulnerabilidad-laboral-en-américa-latina">Obsolescencia de Habilidades y Vulnerabilidad Laboral en América Latina</h2>
+<p>América Latina enfrenta un desafío mayúsculo, el riesgo creciente de que una gran parte de su fuerza
+laboral quede rezagada ante la rápida obsolescencia de habilidades profesionales. Esta realidad se
+agrava en países donde los sistemas educativos no se han actualizado para responder a los nuevos
+perfiles laborales exigidos por la Industria 4.0.</p>
+<p>Según Ritter (2021), uno de los problemas fundamentales en la educación superior es que muchas
+universidades aún operan bajo esquemas del siglo XIX, con enfoques fragmentados por disciplinas
+que ya no responden a la necesidad actual de integrar conocimientos, habilidades blandas y capacidad
+de adaptación. En palabras del autor, el modelo tradicional que separa la física de la biología, o las
+matemáticas del pensamiento social, puede haber sido útil en la primera y segunda revolución
+industrial, pero resulta ineficaz para preparar profesionales que enfrenten problemas complejos y
+sistémicos como los de hoy. Esta afirmación cobra mayor relevancia si se considera que, según el
+Foro Económico Mundial, un 65 % de los estudiantes actuales trabajarán en empleos que aún no
+existen, lo que exige un enfoque educativo mucho más dinámico y prospectivo (Ritter, 2021).</p>
+<p>El estudio de Caratozzolo et al. (2020) pone en evidencia otro aspecto crucial sobre la mesa, la
+obsolescencia acelerada de habilidades en un mercado laboral cambiante. En América Latina, donde
+solo el 19,9% de la fuerza laboral es altamente calificada (frente al 47% en Europa), la velocidad del
+cambio tecnológico amenaza con dejar atrás a millones de trabajadores. Esta situación es
+especialmente crítica en el campo de la ingeniería, donde los programas académicos no siempre se
+actualizan al ritmo de la industria.</p>
+<p>Una analogía útil para entender esta situación es la evolución de la industria petrolera que menciona
+Ritter (2021): así como el paso del aceite de ballena al queroseno y luego a la electricidad transformó
+la economía de la iluminación, la transformación digital actual está cambiando las reglas del juego
+laboral. Quienes no se adapten, como ocurrió con los productores de ballena en el siglo XIX, corren el
+riesgo de desaparecer del mercado. América Latina, con sus altas tasas de informalidad y baja
+inversión en innovación, podría correr el mismo destino si no actualiza con urgencia su educación
+técnica y profesional.</p>
+<p>Esta situación tiene consecuencias graves que van más allá de la inequidad educativa, limita el
+potencial competitivo de la región en la economía digital, donde se requiere talento diverso y altamente
+capacitado. Como señala Marzal (2023), la solución radica en integrar competencias digitales
+avanzadas con metodologías pedagógicas innovadoras, formación docente especializada y el
+desarrollo de habilidades en alfabetización visual y tecnológica. Sin embargo, estos esfuerzos serán
+insuficientes si no se enmarcan en una Educación 4.0 diseñada a las realidades específicas de
+América Latina.</p>
+<h2 id="conclusiones">Conclusiones</h2>
+<p>La Educación 4.0 representa una oportunidad valiosa para transformar la enseñanza y reducir
+desigualdades sociales históricas en América Latina. No obstante, su implementación enfrenta
+debilidades estructurales considerables, brechas de conectividad, baja inversión en infraestructura,
+currículos desactualizados y desigualdades de género persistentes en áreas STEM. Esta dualidad
+muestra que, si bien el modelo educativo tiene gran potencial, su eficacia depende del contexto en el
+que se aplica y de las políticas públicas que lo sostengan.</p>
+<p>Este nuevo paradigma de enseñanza, cobra especial relevancia debido a su impacto directo en el
+desarrollo humano, social y económico de la región. La obsolescencia acelerada de habilidades y la
+exclusión de mujeres en áreas clave como ciencia y tecnología limitan el crecimiento sostenible y la
+competitividad regional en la economía digital.</p>
+<p>Lejos de ser una simple modernización pedagógica, puede convertirse en un verdadero impulsor de
+equidad social, siempre que se superen las limitaciones estructurales, tecnológicas y culturales que
+afectan su implementación.</p>
+<h2 id="referencias">Referencias</h2>
 <ul>
-<li>List item</li>
-<li>Another item</li>
-<li>And another item</li>
-</ul>
-<h3 id="nested-list">Nested list</h3>
-<ul>
-<li>Item
-<ol>
-<li>First Sub-item</li>
-<li>Second Sub-item</li>
-</ol>
+<li>
+<p>Burgos-Ayala, A., &amp; Rodríguez Buitrago, A. G. (2021). <em>Expresiones de desigualdad educativa
+en Colombia: una reflexión desde los indicadores de contexto, acceso y resultados</em>. Cultura
+Científica, 19, 59–78.</p>
+</li>
+<li>
+<p>Cambridge University Press. (1 de Julio de 2025). <em>Cambridge Dictionary</em>. Diccionario.
+<a href="https://dictionary.cambridge.org/es/diccionario/ingles-espanol/stem">https://dictionary.cambridge.org/es/diccionario/ingles-espanol/stem</a></p>
+</li>
+<li>
+<p>Carmen Botella, Emilia López-Iñesta , Silvia Rueda, Anabel Forte, Esther de Ves, Xaro
+Benavent, Paula Marzal (2020). <em>Iniciativas contra la brecha de género en STEM. Una guía de
+buenas prácticas</em>. Actas de las Jenui, vol. 5. 2020, 349-352.</p>
+</li>
+<li>
+<p>Caratozzolo, P., Piloto, C., Sirkis, G., &amp; Correa, M. (2020). <em>Skills obsolescence and education
+global risks in the Fourth Industrial Revolution</em>. IEEE.</p>
+</li>
+<li>
+<p>Chituc, C.-M. (2022). <em>An analysis of technical challenges for Education 4.0 and digital
+education ecosystems</em>. IEEE.</p>
+</li>
+<li>
+<p>Cruz-Carbonell, V., Hernández-Arias, Á. F., &amp; Silva-Arias, A. C. (2020). <em>Cobertura de las TIC
+en la educación básica rural y urbana en Colombia</em> - 2018. Revista Científica Profundidad
+Construyendo Futuro, 13(13), 39-48.</p>
+</li>
+<li>
+<p>Impagliazzo, J., Cuadros-Vargas, E., Araujo, R., Florian-Gaviria, B., &amp; Cancela, H. (2019).
+<em>Panel: Perspectives on computing education in Latin America and the CC2020 Project</em>. IEEE.</p>
+</li>
+<li>
+<p>Juvera, J., &amp; Hernández López, S. (2021). <em>STEAM en la infancia y la brecha de género: Una
+propuesta para la educación no formal</em>. EDU Review: Revista Internacional de Educación y
+Aprendizaje, 9(1), 9–25.</p>
+</li>
+<li>
+<p>Marzal, M. Á. (2023). <em>La formación en competencias digitales para la virtualidad y la
+inteligencia artificial: Una nueva frontera de las multialfabetizaciones</em>. Informatio-(Instituto de
+Información. Facultad de Información y Comunicación).</p>
+</li>
+<li>
+<p>Parra-Murillo, C. A., Gaitán-Cepeda, E., &amp; Romero-Méndez, M. (2023). <em>Analysis of gender-
+based violence as cause of the gap situation in engineering in Latin America</em>. Cátedra Abierta
+Latinoamericana “Matilda y las Mujeres en la Ingeniería”. IEEE.</p>
+</li>
+<li>
+<p>Ritter, B. (2021). <em>Changing problem solving methods in higher education to meet the
+challenges of Industry 4.0</em>. In 2021 IEEE International Conference on Electro Information
+Technology (EIT). IEEE.</p>
+</li>
+<li>
+<p>Souza, A. S. C. de, &amp; Debs, L. (2023). <em>A review of synergies between Industry 4.0,
+Construction 4.0, and Education 4.0 in the engineering education context</em>. Proceedings of the
+IEEE Frontiers in Education Conference (FIE), 2023.</p>
 </li>
 </ul>
-<h2 id="headings">Headings</h2>
-<p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
-<h1 id="h1">H1</h1>
-<h2 id="h2">H2</h2>
-<h3 id="h3">H3</h3>
-<h4 id="h4">H4</h4>
-<h5 id="h5">H5</h5>
-<h6 id="h6">H6</h6>
-<h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</h2>
-<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
-<p>H<sub>2</sub>O</p>
-<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
-<p>Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.</p>
-<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>The above quote is excerpted from Rob Pike&rsquo;s <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
 
           </article>
         </div>
@@ -470,42 +564,12 @@ Mi Post de Prueba | Cristian Rivera G.
               <div class="toc-content">
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#definición">Definición</a></li>
-    <li><a href="#blockquotes">Blockquotes</a>
-      <ul>
-        <li><a href="#blockquote-without-attribution">Blockquote without attribution</a></li>
-        <li><a href="#blockquote-with-attribution">Blockquote with attribution</a></li>
-      </ul>
-    </li>
-    <li><a href="#tables">Tables</a>
-      <ul>
-        <li><a href="#inline-markdown-within-tables">Inline Markdown within tables</a></li>
-      </ul>
-    </li>
-    <li><a href="#code-blocks">Code Blocks</a>
-      <ul>
-        <li><a href="#code-block-with-backticks">Code block with backticks</a></li>
-        <li><a href="#code-block-indented-with-four-spaces">Code block indented with four spaces</a></li>
-        <li><a href="#code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode</a></li>
-      </ul>
-    </li>
-    <li><a href="#list-types">List Types</a>
-      <ul>
-        <li><a href="#ordered-list">Ordered List</a></li>
-        <li><a href="#unordered-list">Unordered List</a></li>
-        <li><a href="#nested-list">Nested list</a></li>
-      </ul>
-    </li>
-    <li><a href="#headings">Headings</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#h2">H2</a>
-      <ul>
-        <li><a href="#h3">H3</a></li>
-      </ul>
-    </li>
-    <li><a href="#other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</a></li>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#desafíos-de-la-educación-40-en-contextos-desiguales">Desafíos de la Educación 4.0 en Contextos Desiguales</a></li>
+    <li><a href="#brechas-de-género-en-carreras-stem-science-technology-engineering-mathematics">Brechas de Género en Carreras STEM (Science, Technology, Engineering, Mathematics)</a></li>
+    <li><a href="#obsolescencia-de-habilidades-y-vulnerabilidad-laboral-en-américa-latina">Obsolescencia de Habilidades y Vulnerabilidad Laboral en América Latina</a></li>
+    <li><a href="#conclusiones">Conclusiones</a></li>
+    <li><a href="#referencias">Referencias</a></li>
   </ul>
 </nav>
               </div>
@@ -517,11 +581,17 @@ Mi Post de Prueba | Cristian Rivera G.
             <h5>Tags</h5>
             <ul class="tags-ul list-unstyled list-inline">
               
-              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/astrof%C3%ADsica" target="_blank">Astrofísica</a></li>
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/educaci%C3%B3n" target="_blank">Educación</a></li>
               
-              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/cosmos" target="_blank">Cosmos</a></li>
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/tecnolog%C3%ADa" target="_blank">Tecnología</a></li>
               
-              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/f%C3%ADsica" target="_blank">Física</a></li>
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/innovaci%C3%B3n" target="_blank">Innovación</a></li>
+              
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/digitalizaci%C3%B3n" target="_blank">Digitalización</a></li>
+              
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/equidad" target="_blank">Equidad</a></li>
+              
+              <li class="list-inline-item"><a href="https://cristianriverag.netlify.app/tags/inclusi%C3%B3n" target="_blank">Inclusión</a></li>
               
             </ul>
           </aside>
@@ -533,17 +603,17 @@ Mi Post de Prueba | Cristian Rivera G.
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=Mi%20Post%20de%20Prueba&url=https%3a%2f%2fcristianriverag.netlify.app%2fblogs%2fmipost%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=Educaci%c3%b3n%20como%20Impulsor%20de%20Equidad%20Social&url=https%3a%2f%2fcristianriverag.netlify.app%2fblogs%2fmipost%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=Mi%20Post%20de%20Prueba: https%3a%2f%2fcristianriverag.netlify.app%2fblogs%2fmipost%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Educaci%c3%b3n%20como%20Impulsor%20de%20Equidad%20Social: https%3a%2f%2fcristianriverag.netlify.app%2fblogs%2fmipost%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=Mi%20Post%20de%20Prueba&amp;body=Check%20out%20this%20site https%3a%2f%2fcristianriverag.netlify.app%2fblogs%2fmipost%2f'>
+                  <a target="_blank" href='mailto:?subject=Educaci%c3%b3n%20como%20Impulsor%20de%20Equidad%20Social&amp;body=Visita%20mi%20p%c3%a1gina https%3a%2f%2fcristianriverag.netlify.app%2fblogs%2fmipost%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
@@ -622,75 +692,46 @@ Mi Post de Prueba | Cristian Rivera G.
             <div class="card h-100">
                 
                 <div class="card-header">
+                    <a href="/blogs/webscraping-scrapy/">
+                        <img src="/images/webscraping.png" class="card-img-top" alt="Web Scraping con Python y Scrapy">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/webscraping-scrapy/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Web Scraping con Python y Scrapy">Web Scraping con Python y …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>¿Qué es el Web Scraping? Vivimos en un mundo donde una cantidad enorme de información está disponible en internet: precios de productos, noticias, datos climáticos, ofertas de empleo, resultados deportivos y mucho más. Sin embargo, gran parte de esa información no está lista para ser analizada …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Mar 25, 2026</span>
+                    <a href="/blogs/webscraping-scrapy/" class="float-end btn btn-outline-info btn-sm">Leer</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
                     <a href="/blogs/mipost/">
-                        <img src="/images/look.jpg" class="card-img-top" alt="Mi Post de Prueba">
+                        <img src="/images/eduacion.png" class="card-img-top" alt="Educación como Impulsor de Equidad Social">
                     </a>
                 </div>
                 
                 <div class="card-body bg-transparent p-3 shadow-sm">
                     <a href="/blogs/mipost/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Mi Post de Prueba">Mi Post de Prueba</h5>
+                        <h5 class="card-title bg-transparent" title="Educación como Impulsor de Equidad Social">Educación como Impulsor …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p>Definición Esto es un párrafo para probas cómo se ve en la publicación y dentro de el blog.
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-Blockquotes The blockquote element represents content that is quoted …</p>
+                        <p>Introducción El presente documento es un ejercicio académico de escritura argumentativa cuyo propósito es desarrollar y sustentar la idea de que la Educación 4.0 puede convertirse en un motor clave para la equidad social. A través del análisis crítico de fuentes académicas, se busca evidenciar cómo …</p>
                     </div>
                 </div>
                 <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 14, 2023</span>
+                    <span class="float-start">Jun 14, 2025</span>
                     <a href="/blogs/mipost/" class="float-end btn btn-outline-info btn-sm">Leer</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/math/">
-                        <img src="/images/mathjax.png" class="card-img-top" alt="Render Math With Mathjax">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/math/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Render Math With Mathjax">Render Math With Mathjax</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>Mathjax Math equations can be rendered using Mathjax syntax with AMS symbol support.
-Optionally enable this on a per-page basis by adding mathjax: true to your frontmatter.
-Then, use $$ ... $$ on a line by itself to render a block equation:
-$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Dec 9, 2022</span>
-                    <a href="/blogs/math/" class="float-end btn btn-outline-info btn-sm">Leer</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 pt-2">
-            <div class="card h-100">
-                
-                <div class="card-header">
-                    <a href="/blogs/markdown-syntax/">
-                        <img src="/images/post.jpg" class="card-img-top" alt="Markdown Syntax">
-                    </a>
-                </div>
-                
-                <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="/blogs/markdown-syntax/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Markdown Syntax">Markdown Syntax</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p>Paragraph Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus …</p>
-                    </div>
-                </div>
-                <div class="mt-auto card-footer">
-                    <span class="float-start">Apr 3, 2021</span>
-                    <a href="/blogs/markdown-syntax/" class="float-end btn btn-outline-info btn-sm">Leer</a>
                 </div>
             </div>
         </div>
@@ -701,7 +742,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
 <div class="text-center pt-2">
     
     <span class="px-1">
-        <a href="https://github.com" aria-label="github">
+        <a href="https://github.com/riveracrist" aria-label="github">
             <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
                 <path
                     d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
@@ -728,7 +769,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
 
     
     <span class="px-1">
-        <a href="https://linkedin.com" aria-label="linkedin">
+        <a href="https://www.linkedin.com/" aria-label="linkedin">
             <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
                 viewBox="0 0 512 512">
                 <rect width="512" height="512" fill="#0077b5" rx="15%" />
@@ -741,7 +782,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
     
 
     
-    <a href="https://twitter.com" aria-label="twitter">
+    <a href="https://x.com/CrGoo7" aria-label="twitter">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
             <path fill="#03a9f4"
                 d="M42,37c0,2.762-2.239,5-5,5H11c-2.762,0-5-2.238-5-5V11c0-2.762,2.238-5,5-5h26c2.761,0,5,2.238,5,5 V37z" />
@@ -752,45 +793,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
     
 
     
-    <a href="https://instagram.com" aria-label="instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899"
-                gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#fd5" />
-                <stop offset=".328" stop-color="#ff543f" />
-                <stop offset=".348" stop-color="#fc5245" />
-                <stop offset=".504" stop-color="#e64771" />
-                <stop offset=".643" stop-color="#d53e91" />
-                <stop offset=".761" stop-color="#cc39a4" />
-                <stop offset=".841" stop-color="#c837ab" />
-            </radialGradient>
-            <path fill="url(#yOrnnhliCrdS2gy~4tD8ma)"
-                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
-            <radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813"
-                gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
-                <stop offset="0" stop-color="#4168c9" />
-                <stop offset=".999" stop-color="#4168c9" stop-opacity="0" />
-            </radialGradient>
-            <path fill="url(#yOrnnhliCrdS2gy~4tD8mb)"
-                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
-            <path fill="#fff"
-                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z" />
-            <circle cx="31.5" cy="16.5" r="1.5" fill="#fff" />
-            <path fill="#fff"
-                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z" />
-        </svg>
-    </a>
-    
 
-    
-    <a href="https://facebook.com" aria-label="facebook">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-            <path fill="#3F51B5"
-                d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z" />
-            <path fill="#FFF"
-                d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z" />
-        </svg>
-    </a>
     
 </div><div class="container py-4">
     <div class="row justify-content-center">
@@ -801,7 +804,7 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2024  Todos los derechos reservados
+            &copy; 2026  Todos los derechos reservados
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
@@ -853,6 +856,8 @@ $$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p>
 
 
 
+
+<script src="/js/contact.js"></script>
 
 
 

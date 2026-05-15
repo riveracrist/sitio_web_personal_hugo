@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automatización on Cristian Rivera G.</title>
+    <link>https://cristianriverag.netlify.app/tags/automatizaci%C3%B3n/</link>
+    <description>Recent content in Automatización on Cristian Rivera G.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Mar 2026 10:00:00 +0530</lastBuildDate><atom:link href="https://cristianriverag.netlify.app/tags/automatizaci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Scraping con Python y Scrapy</title>
+      <link>https://cristianriverag.netlify.app/blogs/webscraping-scrapy/</link>
+      <pubDate>Wed, 25 Mar 2026 10:00:00 +0530</pubDate>
+      
+      <guid>https://cristianriverag.netlify.app/blogs/webscraping-scrapy/</guid>
+      <description>¿Qué es el Web Scraping? Vivimos en un mundo donde una cantidad enorme de información está disponible en internet: precios de productos, noticias, datos climáticos, ofertas de empleo, resultados deportivos y mucho más. Sin embargo, gran parte de esa información no está lista para ser analizada directamente; está dispersa en páginas web, presentada visualmente para los usuarios, pero no estructurada para su procesamiento automático.
+El web scraping es el proceso de extracción automatizada de datos desde sitios web.</description>
+    </item>
+    
+  </channel>
+</rss>
